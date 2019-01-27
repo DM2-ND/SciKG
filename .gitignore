@@ -4,6 +4,7 @@ results/*
 resources/LM_dictionary1.txt
 resources/LM_dictionary2.txt
 resources/LM_dictionary3.txt
+auto_ldata/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

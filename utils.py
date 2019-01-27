@@ -21,6 +21,7 @@ from torch.autograd import Variable
 from sklearn.utils import shuffle
 #from pytorch_pretrained_bert import BertTokenizer, BertModel, BertForMaskedLM
 
+from config import *
 from load_pretrained_word_embeddings import *
 from Stmt_Extraction_Net import *
 
@@ -46,9 +47,9 @@ class Corpus(object):
 	def load_dictionary(self):
 		print('loading dictionary for language model ...')
 		index = 0
-		filepath1 = './resources/LM_dictionary1.txt'
-		filepath2 = './resources/LM_dictionary2.txt'
-		filepath3 = './resources/LM_dictionary3.txt'
+		filepath1 = WORKDIR+'resources/LM_dictionary1.txt'
+		filepath2 = WORKDIR+'resources/LM_dictionary2.txt'
+		filepath3 = WORKDIR+'resources/LM_dictionary3.txt'
 		with io.open(filepath1, 'r', encoding="utf8") as f:
 			tokens = 0
 			for line in f:
@@ -126,11 +127,11 @@ class DataCenter(object):
 		self.device = device
 		self.lm_type = lm_type
 
-		self.POS2ID, self.ID2POS = self.getTag2ID('./resources/PosTag2ID.txt')
-		self.CAP2ID, self.ID2CAP = self.getTag2ID('./resources/CAPTag2ID.txt')
-		self.POSCAP2ID, self.ID2POSCAP = self.getTag2ID('./resources/POSCAPTag2ID_new.txt')
-		self.Tag2ID_fact, self.ID2Tag_fact = self.getTag2ID('./resources/OutTag2ID_fact.txt')
-		self.Tag2ID_condition, self.ID2Tag_condition = self.getTag2ID('./resources/OutTag2ID_condition.txt')
+		self.POS2ID, self.ID2POS = self.getTag2ID(WORKDIR+'resources/PosTag2ID.txt')
+		self.CAP2ID, self.ID2CAP = self.getTag2ID(WORKDIR+'resources/CAPTag2ID.txt')
+		self.POSCAP2ID, self.ID2POSCAP = self.getTag2ID(WORKDIR+'resources/POSCAPTag2ID_new.txt')
+		self.Tag2ID_fact, self.ID2Tag_fact = self.getTag2ID(WORKDIR+'resources/OutTag2ID_fact.txt')
+		self.Tag2ID_condition, self.ID2Tag_condition = self.getTag2ID(WORKDIR+'resources/OutTag2ID_condition.txt')
 
 		self.Tag2Num = dict()
 

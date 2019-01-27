@@ -28,25 +28,22 @@ from Stmt_Extraction_Net import Stmt_Extraction_Net
 parser = argparse.ArgumentParser(description='PyTorch multi_input multi_output model')
 
 # Model parameters.
-parser.add_argument('--train', type=str, default='../data/stmts-train.tsv',
+parser.add_argument('--train', type=str, default=WORKDIR+'data/stmts-train.tsv',
 					help='location of the training set')
-parser.add_argument('--udata', type=str, default='./udata/stmts-demo-unlabeled-pubmed',
+parser.add_argument('--udata', type=str, default='./udata/stmts-demo-unlabeled',
 					help='location of the unlabeled data')
-parser.add_argument('--eval', type=str, default='../data/stmts-eval.tsv',
+parser.add_argument('--eval', type=str, default=WORKDIR+'data/stmts-eval.tsv',
 					help='location of the evaluation set')
-parser.add_argument('--check_point', type=str, default='./models/supervised_model_011000000.torch',
+parser.add_argument('--check_point', type=str, default=WORKDIR+'models/supervised_model_011000000.torch',
 					help='location of the saved model')
-parser.add_argument('--out_file', type=str, default='./results/evaluation_supervised_model',
-					help='location of the saved results')
-parser.add_argument('--language_model', type=str, default=WORKDIR+'/code-preprocessing/word_language_model/model.pt',
+parser.add_argument('--language_model', type=str, default=WORKDIR+'models/LM/model.pt',
 					help='language model checkpoint to use')
-parser.add_argument('--wordembed', type=str, default=WORKDIR+'/preprocessing/pubmed-vectors=50.bin',
+parser.add_argument('--wordembed', type=str, default=WORKDIR+'models/WE/',
 					help='wordembedding file for words')
 parser.add_argument('--use_gate', action='store_true')
 parser.add_argument('--enhance', action='store_true')
 parser.add_argument('--seed', type=int, default=824,
 					help='random seed')
-parser.add_argument('--epoch', type=int, default=1)
 parser.add_argument('--cuda', action='store_true',
 					help='use CUDA')
 parser.add_argument('--AR', action='store_true')
@@ -54,9 +51,9 @@ parser.add_argument('--TC', action='store_true')
 parser.add_argument('--TCDEL', action='store_true')
 parser.add_argument('--SH', action='store_true')
 parser.add_argument('--DEL', action='store_true')
-parser.add_argument('--max_f1', type=list, default=[50, 50],
+parser.add_argument('--max_f1', type=list, default=[0, 0],
 					help='random seed')
-parser.add_argument('--max_std', type=list, default=[1,1])
+parser.add_argument('--max_std', type=list, default=[0,0])
 
 args = parser.parse_args()
 
@@ -230,11 +227,11 @@ if __name__ == '__main__':
 
 	str_config = args.check_point.split('_')[-1].split('.torch')[0]
 	config = [bool(int(i)) for i in str_config]
-	assert len(config) == 12
+	assert len(config) == 9
 	lm_config = config[:3]
 	postag_config = config[3:6]
 	cap_config = config[6:9]
-	poscap_config = config[9:12]
+	poscap_config = [False, False, False, False]
 
 	print 'lm config', lm_config
 	print 'postag config', postag_config
@@ -267,8 +264,8 @@ if __name__ == '__main__':
 	else:
 		data_file += ('_enhance_'+str_config)
 
-	out_model_name = 'hope_'+(out_model_string).join(in_model_name.split('_model'))
-	out_file = './results/hope_evaluation_'+out_model_name.split('/')[-1].split('.torch')[0]+'.txt'
+	out_model_name = (out_model_string).join(in_model_name.split('_model'))
+	out_file = WORKDIR+'results/evaluation_'+out_model_name.split('/')[-1].split('.torch')[0]+'.txt'
 
 	print 'in_model_name =', in_model_name
 	print 'out_model_name =', out_model_name
@@ -323,9 +320,8 @@ if __name__ == '__main__':
 		TRAIN_POSCAPs.extend(EXTRAIN_POSCAPs)
 		TRAIN_OUTs.extend(EXTRAIN_OUTs)
 
-		# for epoch in range(args.epoch):
 		print 'training in extended set ..'
-		max_f1, max_std, min_loss = retrain_model(stmt_extraction_net, out_file, 200, dataCenter, device, weight_classes_fact, weight_classes_condition, (TRAIN_SENTENCEs, TRAIN_POSTAGs, TRAIN_CAPs, TRAIN_LM_SENTENCEs, TRAIN_POSCAPs, TRAIN_OUTs), out_model_name, in_model_name, max_f1, max_std, min_loss, 5)
+		max_f1, max_std = retrain_model(stmt_extraction_net, out_file, 200, dataCenter, device, weight_classes_fact, weight_classes_condition, (TRAIN_SENTENCEs, TRAIN_POSTAGs, TRAIN_CAPs, TRAIN_LM_SENTENCEs, TRAIN_POSCAPs, TRAIN_OUTs), out_model_name, in_model_name, max_f1, max_std, 5)
 		print 'empty_cache'
 		torch.cuda.empty_cache()
 

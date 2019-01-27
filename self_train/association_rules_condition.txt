@@ -1,0 +1,654 @@
+IN:by:0	NN:1-->B-c2P	B-c3C#5#0.62
+NN:-1	IN:in:0-->B-c1A	B-c2P#3#0.05
+NNS:-1	,:-1-->B-c1C	O#2#0.09
+IN:during:0	JJ:1-->B-c2P	B-c3C#2#1.00
+VBD:-1-->B-c2P#14#0.12
+IN:with:0	NNP:1-->B-c2P	B-c3C#3#0.25
+WDT:-1	MD:-1	VB:-1-->O	B-c2P	I-c2P#3#1.00
+JJ:1	JJ:1	NN:1	NNS:1-->B-c3C	I-c3C	I-c3C	I-c3C#4#1.00
+IN:in:0	NN:1-->B-c2P	I-c2P#3#0.12
+CD:1	NNS:1	.:1-->B-c3A	B-c3C	O#2#0.67
+VBP:-1-->B-c2P#2#0.07
+NN:1	NN:1	,:-1	DT:-1-->B-c3C	I-c3C	O	O#2#0.40
+NN:-1-->B-c1C#31#0.07
+VBD:-1	NNP:-1-->O	B-c1C#2#0.67
+IN:of:0	NNP:1	NNS:-1	VBD:-1-->O	B-c1C	I-c1C	B-c2P#2#0.67
+IN:in:0	JJ:1-->O	B-c1C#3#0.08
+CC:-1	NNS:-1-->O	B-c1C#2#1.00
+JJ:1	NN:1	JJ:1-->B-c3C	I-c3C	I-c3C#2#0.40
+NNP:1	.:1-->B-c3C	O#3#0.21
+CC:-1	NNP:-1	CD:-1	,:-1-->O	B-c3C	I-c3C	O#2#1.00
+NN:1	NNS:1-->B-c1C	I-c1C#2#0.04
+WRB:-1	VBN:-1-->O	B-c2P#3#1.00
+JJ:1	NNS:1	VBP:1-->B-c3C	I-c3C	O#2#0.67
+VB:1	CD:1-->B-c3C	I-c3C#2#1.00
+NN:1	,:1-->B-c3A	O#2#0.06
+IN:of:0	NNP:-1-->O	B-c1C#9#0.90
+CC:-1	DT:-1	NN:-1	IN:in:0-->O	O	B-c1A	B-c2P#2#1.00
+VBN:-1	IN:in:0	NNP:1-->O	O	B-c1C#2#0.67
+NN:1	NN:1	NN:1	NNS:1	.:1-->B-c3C	I-c3C	I-c3C	I-c3C	O#2#1.00
+NNP:1	VBD:1-->B-c3C	O#5#0.42
+NN:-1-->B-c2P#2#0.00
+NNP:1	,:1	NNP:-1	CC:-1	NNP:-1-->B-c1C	O	B-c1C	O	B-c1C#2#1.00
+IN:of:0	NN:1-->O	B-c1C#9#0.32
+JJ:-1	NNS:-1	VBN:-1-->B-c1C	I-c1C	B-c2P#2#0.50
+VBN:-1	IN:by:0-->B-c2P	I-c2P#12#0.43
+IN:toward:0	DT:1-->B-c2P	O#2#1.00
+IN:of:0	VBG:1-->O	B-c2P#2#1.00
+IN:in:0	NN:1-->B-c2P	B-c3C#7#0.29
+NNP:1	,:1-->B-c1C	O#2#0.09
+IN:of:0	JJ:1-->O	B-c1C#23#0.45
+DT:-1	NN:-1	IN:of:0	NN:-1-->O	B-c1A	O	B-c1C#2#0.67
+NNP:1	NNS:-1	VBD:-1	IN:from:0	JJ:1-->B-c1C	I-c1C	B-c2P	I-c2P	B-c3C#2#1.00
+NNP:1-->B-c1C#33#0.14
+JJ:1	NN:1	NNS:1	CC:1-->B-c3C	I-c3C	I-c3C	O#2#0.50
+VBG:-1-->B-c1A#2#0.06
+DT:-1	NN:-1	IN:toward:0	DT:1-->O	B-c1A	B-c2P	O#2#1.00
+IN:of:0	NNP:-1	IN:by:0-->O	B-c1C	B-c2P#3#1.00
+CC:-1	JJ:-1-->O	B-c1C#8#0.44
+NN:-1	IN:in:0	DT:1-->B-c1A	B-c2P	O#2#0.14
+IN:from:0	JJ:1	NN:1-->B-c2P	B-c3C	I-c3C#3#0.75
+IN:of:0	NNP:1	NNS:-1-->O	B-c1C	I-c1C#2#0.50
+NNP:1	NNS:1-->B-c3C	I-c3C#8#0.27
+DT:1	NN:-1-->O	B-c1C#3#0.12
+IN:of:0	NNP:1	,:1	NNP:-1	CC:-1-->O	B-c1C	O	B-c1C	O#2#1.00
+IN:in:0	DT:1-->B-c2P	O#14#0.50
+CC:-1	NNP:-1	CD:-1-->O	B-c3C	I-c3C#2#1.00
+CC:-1	JJ:-1	NNS:-1-->O	B-c1C	I-c1C#5#0.56
+NN:-1	NN:-1	IN:in:0-->B-c1C	I-c1C	B-c2P#3#0.38
+NN:-1	VBG:-1	NN:-1	IN:of:0-->B-c1A	I-c1A	I-c1A	O#2#0.67
+CC:1	JJ:1	NNS:1	.:1-->O	B-c3C	I-c3C	O#3#0.75
+NNS:-1-->B-c3C#3#0.01
+JJ:1	NNP:1	NNP:1-->B-c3C	I-c3C	I-c3C#2#0.67
+NNP:1	NNP:1-->B-c3C	I-c3C#8#0.40
+,:1	NNP:-1	CC:-1-->O	B-c1C	O#2#1.00
+TO:-1	VB:-1	DT:-1	NN:-1-->O	O	O	B-c1C#3#0.50
+NN:1	NN:1	NNS:1-->B-c3C	I-c3C	I-c3C#3#0.43
+NN:1	NN:1	.:1-->B-c3C	I-c3C	O#2#0.14
+DT:-1	NN:-1	NN:-1-->O	B-c1C	I-c1C#2#0.40
+DT:-1	NNS:-1	IN:of:0-->O	B-c1A	O#3#0.30
+CC:-1	DT:-1	NN:-1	IN:toward:0-->O	O	B-c1A	B-c2P#2#1.00
+CD:1-->B-c3A#7#0.21
+NNP:-1	IN:with:0-->B-c1C	B-c2P#2#0.50
+NN:-1	IN:of:0	NNP:-1-->B-c1A	O	B-c1C#4#0.44
+NN:1	,:1-->B-c3C	O#3#0.09
+IN:of:0	NNP:1	NNS:1-->O	B-c3C	I-c3C#2#0.40
+IN:against:0-->B-c2P#8#0.80
+,:1	NN:1-->O	B-c3C#2#0.25
+NNP:-1	IN:of:0	JJ:1-->B-c1A	O	B-c1C#2#1.00
+IN:in:0	DT:1	JJ:1-->B-c2P	O	B-c3C#2#0.29
+NN:-1	IN:on:0-->B-c1C	B-c2P#3#0.38
+TO:1-->B-c2P#3#0.11
+NN:-1	NN:-1	NNS:-1-->B-c1C	I-c1C	I-c1C#2#0.33
+TO:-1	NNP:-1-->B-c2P	B-c3C#2#0.40
+IN:in:0	JJ:1	NN:1-->B-c2P	B-c3C	I-c3C#6#0.60
+DT:1	JJ:1	NNS:1-->O	B-c3C	I-c3C#2#0.67
+IN:of:0	JJ:1	JJ:1-->O	B-c3C	I-c3C#2#0.33
+NN:1	NN:1	,:-1-->B-c3C	I-c3C	O#2#0.29
+JJ:-1-->B-c3A#7#0.03
+JJ:1	NNS:-1	IN:of:0-->B-c3A	I-c3A	O#3#0.75
+NNP:-1	NN:-1	NN:-1-->B-c1C	I-c1C	I-c1C#2#0.20
+NNP:-1	NN:-1	NN:-1	IN:of:0-->B-c1A	I-c1A	I-c1A	O#2#1.00
+VBN:-1	IN:with:0	DT:1	NN:1-->B-c2P	I-c2P	O	B-c3C#2#1.00
+NNP:-1-->B-c1A#6#0.04
+IN:of:0	NN:1-->O	B-c3C#2#0.07
+NN:1	NN:1	NNS:1	.:1-->B-c3C	I-c3C	I-c3C	O#2#0.40
+WDT:-1	VBD:-1-->O	B-c2P#2#1.00
+(:-1	NNP:-1	IN:of:0-->O	B-c1A	O#2#1.00
+CC:1	VB:1	CD:1-->O	B-c3C	I-c3C#2#1.00
+MD:-1	VB:-1-->B-c2P	I-c2P#3#0.19
+IN:in:0	NN:1	NNS:1-->B-c2P	B-c3C	I-c3C#2#0.67
+CC:-1	NNP:-1	IN:in:0-->O	B-c1C	B-c2P#4#1.00
+RB:-1	VBN:-1	IN:with:0-->B-c2P	I-c2P	I-c2P#2#1.00
+NN:-1	IN:of:0	NNP:1	,:1	NNP:-1-->B-c1A	O	B-c1C	O	B-c1C#2#1.00
+NNP:1	NN:-1	NNS:-1	VBN:-1	IN:by:0-->B-c1C	I-c1C	I-c1C	B-c2P	I-c2P#2#0.67
+JJ:-1	NNS:-1	IN:at:0-->B-c1C	I-c1C	B-c2P#2#1.00
+JJ:1	NN:1	NNS:1	.:1-->B-c3C	I-c3C	I-c3C	O#4#0.57
+NN:-1	VBG:-1	NN:-1-->B-c1A	I-c1A	I-c1A#2#0.50
+IN:of:0	NNP:1-->O	B-c1C#15#0.32
+JJ:1	CC:1	JJ:1	JJ:1-->B-c3C	O	B-c3C	I-c3C#2#1.00
+NNP:1	,:1	NNP:-1-->B-c1C	O	B-c1C#2#1.00
+NN:-1	IN:of:0	NN:-1	IN:in:0-->B-c1A	O	B-c1C	B-c2P#2#1.00
+IN:of:0	DT:1	NN:1-->O	O	B-c1C#2#0.29
+NNP:1	VBD:-1-->B-c3C	O#2#0.40
+JJ:-1	NN:-1	IN:in:0	DT:1	NN:-1-->B-c1C	I-c1C	B-c2P	O	B-c3A#2#0.67
+VB:-1	DT:-1	JJ:-1-->O	O	B-c1C#2#0.40
+JJ:1	NN:1	,:1-->B-c3C	I-c3C	O#3#0.27
+DT:-1	NNS:-1-->O	B-c1C#2#0.08
+DT:1	NN:-1	IN:of:0	NNP:1	,:1-->O	B-c3A	O	B-c3C	O#2#1.00
+IN:of:0	JJ:1	NN:1-->O	B-c3C	I-c3C#2#0.12
+RB:1-->B-c2P#2#0.06
+JJ:-1	NNS:-1	IN:of:0	DT:1-->B-c1A	I-c1A	O	O#2#0.40
+IN:of:0	DT:1	NNP:1	NN:-1-->O	O	B-c1C	I-c1C#2#1.00
+JJ:1	NN:1-->B-c3C	I-c3C#29#0.28
+,:1	NNP:-1	CC:-1	NNP:-1-->O	B-c1C	O	B-c1C#2#1.00
+DT:-1	JJ:-1-->O	B-c3A#3#0.06
+VBG:-1	NN:-1-->B-c2P	B-c3C#2#0.14
+IN:as:0	DT:1	NN:1-->B-c2P	O	B-c3A#2#1.00
+IN:of:0	NNP:-1	IN:with:0-->O	B-c1C	B-c2P#2#1.00
+CC:1	JJ:1	NNS:1-->O	B-c3C	I-c3C#3#0.75
+NNP:1	NN:1-->B-c1C	I-c1C#2#0.04
+IN:of:0	NNP:1	NNS:-1	VBD:-1	IN:from:0-->O	B-c1C	I-c1C	B-c2P	I-c2P#2#1.00
+NN:1	.:1-->B-c3C	O#7#0.10
+NNP:-1	VBD:-1-->B-c1C	B-c2P#2#0.17
+NN:-1	IN:of:0	NNP:1	,:1-->B-c1A	O	B-c1C	O#2#0.50
+JJ:1	NN:1-->B-c1C	I-c1C#9#0.09
+IN:in:0	NNP:1	NNP:1-->B-c2P	B-c3C	I-c3C#3#1.00
+DT:1	NNP:1	NN:-1-->O	B-c1C	I-c1C#3#1.00
+VBN:-1	IN:by:0	NNP:1	NNP:1-->B-c2P	I-c2P	B-c3C	I-c3C#2#0.67
+VBN:-1	IN:with:0	DT:-1	IN:of:0-->B-c2P	I-c2P	O	O#2#1.00
+VBN:-1	IN:with:0	DT:-1-->B-c2P	I-c2P	O#2#1.00
+,:1	CC:1	NNP:-1	CC:-1-->O	O	B-c3C	O#2#1.00
+TO:-1	VB:-1	JJ:-1-->O	O	B-c1C#4#0.50
+JJ:-1	NNS:-1	IN:of:0-->B-c1A	I-c1A	O#5#0.38
+IN:in:0	JJ:1	JJ:1-->B-c2P	B-c3C	I-c3C#3#1.00
+NNP:-1	NNP:-1-->B-c1C	I-c1C#2#0.22
+CC:1	NN:1-->O	B-c3C#3#0.30
+DT:1	NNP:1	NN:-1	NNS:-1	VBN:-1-->O	B-c1C	I-c1C	I-c1C	B-c2P#2#1.00
+CC:1	NNP:-1	CC:-1-->O	B-c3C	O#2#1.00
+NN:-1	NN:-1-->B-c1A	I-c1A#2#0.04
+NN:1	NNS:1	.:1-->B-c3C	I-c3C	O#5#0.26
+IN:in:0	NNP:1	NNP:1	NNS:1-->B-c2P	B-c3C	I-c3C	I-c3C#2#1.00
+JJ:1	NNS:-1	,:-1	CC:-1	DT:-1	NN:-1-->O	O	O	O	O	B-c1A#2#1.00
+VB:-1	JJ:-1	NNS:-1-->O	B-c1C	I-c1C#2#0.29
+JJ:1	JJ:1	NNS:1-->B-c3C	I-c3C	I-c3C#6#0.55
+CC:-1	DT:-1	NN:-1	IN:toward:0	DT:1	NN:-1-->O	O	B-c1A	B-c2P	O	B-c1A#2#1.00
+NN:-1	IN:of:0	JJ:1	NNS:1-->B-c3A	O	B-c3C	I-c3C#2#0.33
+NNP:1	,:1-->B-c3C	O#9#0.39
+NN:1-->B-c3A#7#0.02
+CC:-1	JJ:-1	NN:-1	IN:of:0-->O	B-c1A	I-c1A	O#3#0.75
+DT:-1	NN:-1	JJ:-1-->O	B-c1C	I-c1C#2#0.50
+DT:1	NNP:1	NN:-1	NNS:-1	VBN:-1	IN:by:0-->O	B-c1C	I-c1C	I-c1C	B-c2P	I-c2P#2#1.00
+IN:of:0	NNP:1	NN:-1-->O	B-c1C	I-c1C#4#1.00
+VB:-1	DT:-1	JJ:-1	JJ:-1	NN:-1-->O	O	B-c1C	I-c1C	I-c1C#2#0.67
+IN:of:0	JJ:1	NN:-1	IN:in:0-->O	B-c1C	I-c1C	B-c2P#3#0.75
+NNP:1	JJ:1-->B-c3C	I-c3C#4#0.44
+IN:with:0	JJ:1-->O	B-c1C#2#0.11
+DT:-1	NNP:-1-->O	B-c1C#3#0.38
+NN:-1	IN:of:0	JJ:1-->B-c1A	O	B-c1C#12#0.31
+IN:in:0	NN:1	NN:1-->B-c2P	B-c3C	I-c3C#2#0.67
+DT:-1	JJ:-1-->O	B-c1C#7#0.13
+JJ:-1	NN:-1	NN:-1-->B-c1C	I-c1C	I-c1C#3#0.20
+IN:in:0	DT:1	NN:-1-->B-c2P	O	B-c3A#4#0.44
+IN:by:0	JJ:1-->B-c2P	B-c3C#6#0.55
+VBN:-1	IN:by:0	NNP:1-->B-c2P	I-c2P	B-c3C#6#0.60
+NNP:-1	IN:against:0-->B-c1C	B-c2P#2#1.00
+DT:-1	JJ:-1	NN:-1-->O	B-c1A	I-c1A#5#0.13
+JJ:-1	NNS:-1	IN:of:0	DT:1	NNP:1-->B-c1A	I-c1A	O	O	B-c1C#2#0.67
+CC:1	NNP:1	NN:1-->O	B-c3C	I-c3C#2#0.33
+IN:for:0-->B-c2P#7#0.26
+NN:-1	IN:in:0	JJ:1-->B-c1C	B-c2P	B-c3C#2#0.11
+DT:1	JJ:-1	NN:-1-->O	B-c3C	I-c3C#2#0.25
+IN:by:0	JJ:1	NN:1-->B-c2P	B-c3C	I-c3C#2#0.40
+JJ:1	JJ:1-->B-c1C	I-c1C#3#0.08
+NNP:1	NN:-1	NNS:-1	VBN:-1-->B-c1C	I-c1C	I-c1C	B-c2P#2#0.67
+JJ:1	NNS:1-->B-c3A	I-c3A#3#0.05
+NNP:1	,:1	NNP:1	,:1-->B-c3C	O	B-c3C	O#2#0.67
+IN:of:0	JJ:1	NNS:-1	IN:from:0-->O	B-c1C	I-c1C	B-c2P#3#1.00
+VB:-1	JJ:-1-->O	B-c1A#2#0.13
+IN:with:0	JJ:1	NN:1-->B-c2P	B-c3C	I-c3C#3#1.00
+DT:-1	JJ:-1	NN:-1	IN:of:0-->O	B-c1A	I-c1A	O#2#0.20
+JJ:-1	NN:-1	NN:-1	IN:of:0-->B-c1A	I-c1A	I-c1A	O#2#1.00
+JJ:1	JJ:1	NNS:1	.:1-->B-c3C	I-c3C	I-c3C	O#3#0.75
+NN:-1	IN:toward:0	DT:1	NN:-1-->B-c1A	B-c2P	O	B-c1A#2#1.00
+DT:1	NN:-1-->O	B-c3A#8#0.33
+IN:at:0	DT:1-->B-c2P	O#3#0.60
+DT:1	NNP:1-->O	B-c1C#3#0.19
+NN:-1	IN:of:0	JJ:1	NNS:-1	IN:from:0-->B-c1A	O	B-c1C	I-c1C	B-c2P#2#0.67
+CC:-1	NNP:-1	NN:-1-->O	B-c1C	I-c1C#2#1.00
+JJ:1	JJ:1	NN:1	NNS:1	.:1-->B-c3C	I-c3C	I-c3C	I-c3C	O#2#1.00
+JJ:1	NN:1	NN:1-->B-c3C	I-c3C	I-c3C#2#0.11
+JJ:-1	NN:-1	IN:in:0	DT:1-->B-c1C	I-c1C	B-c2P	O#3#0.50
+DT:-1	NN:-1	IN:in:0	DT:1-->O	B-c1A	B-c2P	O#2#1.00
+NNP:-1	IN:in:0-->B-c1C	B-c2P#6#1.00
+JJ:1	NNP:1-->B-c3C	I-c3C#10#0.40
+CC:-1	JJ:-1	NN:-1-->O	B-c1A	I-c1A#3#0.33
+IN:in:0	JJ:1	NN:1	NNS:1-->B-c2P	B-c3C	I-c3C	I-c3C#3#0.60
+CC:-1	DT:-1	NN:-1	IN:in:0	DT:1-->O	O	B-c1A	B-c2P	O#2#1.00
+CC:-1	NNP:-1-->O	B-c1C#10#0.59
+VBN:-1	IN:by:0	JJ:1	JJ:1-->B-c2P	I-c2P	B-c3C	I-c3C#2#1.00
+IN:of:0	NN:-1	IN:on:0-->O	B-c1C	B-c2P#3#1.00
+NN:1	VBD:1	DT:-1-->B-c3C	O	O#2#0.67
+NN:-1	IN:toward:0-->B-c1A	B-c2P#2#1.00
+VB:-1	DT:-1	JJ:-1	JJ:-1-->O	O	B-c1C	I-c1C#2#0.67
+JJ:-1	NN:-1	NN:-1	IN:for:0-->B-c1C	I-c1C	I-c1C	B-c2P#2#0.67
+CD:1	NN:1-->B-c3C	I-c3C#2#0.29
+IN:of:0	JJ:1	JJ:-1	NNS:-1	IN:from:0	JJ:1-->O	B-c1C	I-c1C	I-c1C	B-c2P	B-c3C#2#1.00
+IN:in:0	JJ:1	NN:1	NNS:1	CC:1-->B-c2P	B-c3C	I-c3C	I-c3C	O#2#1.00
+JJ:1	JJ:-1	NNS:-1	IN:from:0	JJ:1-->B-c1C	I-c1C	I-c1C	B-c2P	B-c3C#2#1.00
+IN:of:0	JJ:1	JJ:-1	NNS:-1-->O	B-c1C	I-c1C	I-c1C#2#1.00
+JJ:1	JJ:-1	NNS:-1-->B-c1C	I-c1C	I-c1C#2#1.00
+DT:-1	NN:-1	IN:toward:0	DT:1	NN:-1-->O	B-c1A	B-c2P	O	B-c1A#2#1.00
+JJ:-1	NNS:-1	IN:of:0	DT:1	NNP:1	NN:-1-->B-c1A	I-c1A	O	O	B-c1C	I-c1C#2#1.00
+JJ:1	JJ:1	NN:1	NN:1-->B-c3C	I-c3C	I-c3C	I-c3C#3#0.60
+NN:1	.:1-->B-c3A	O#2#0.03
+IN:of:0	JJ:1	NN:1-->O	B-c1C	I-c1C#5#0.31
+,:-1	DT:-1	NN:-1	IN:of:0-->O	O	B-c1A	O#7#0.58
+IN:in:0	NN:1-->O	B-c3C#2#0.08
+NN:-1	IN:of:0	NNS:1-->B-c1A	O	B-c1C#2#0.25
+CD:-1	NNS:-1-->B-c1A	I-c1A#2#0.40
+JJ:1	CC:1-->B-c3C	O#3#0.50
+NNP:1	NN:1	NNS:1-->B-c3C	I-c3C	I-c3C#2#0.50
+IN:in:0	JJ:1	JJ:1	NNS:1-->B-c2P	B-c3C	I-c3C	I-c3C#2#1.00
+JJ:1-->B-c1A#3#0.01
+NN:-1	IN:of:0	NNP:1	,:1	NNP:-1	CC:-1-->B-c1A	O	B-c1C	O	B-c1C	O#2#1.00
+DT:-1	JJ:-1	JJ:-1	NN:-1-->O	B-c1C	I-c1C	I-c1C#3#0.33
+IN:in:0	JJ:1-->B-c2P	B-c1C#3#0.08
+DT:-1	JJ:-1	NN:-1-->O	B-c3A	I-c3A#3#0.08
+JJ:1	NNP:1-->B-c1C	I-c1C#3#0.12
+JJ:1	NN:1	NNS:1	VBD:1-->B-c3C	I-c3C	I-c3C	O#2#0.67
+NN:-1	IN:of:0	NN:-1-->B-c1A	O	B-c1C#3#0.50
+IN:from:0	DT:1-->B-c2P	O#2#1.00
+IN:in:0	JJ:1	NNP:1-->B-c2P	B-c3C	I-c3C#3#0.50
+VB:-1	NNP:-1	NN:-1-->O	B-c1C	I-c1C#2#0.67
+IN:on:0	NNP:1-->B-c2P	B-c3C#2#1.00
+DT:1	NN:1-->O	B-c3C#6#0.19
+IN:for:0	DT:1-->B-c2P	O#2#0.29
+VB:-1	JJ:-1-->O	B-c1C#4#0.27
+JJ:-1	CC:-1	JJ:-1-->B-c1A	O	B-c1A#2#0.33
+NNP:1	NNS:-1	VBD:-1	IN:from:0-->B-c1C	I-c1C	B-c2P	I-c2P#2#1.00
+,:-1	IN:on:0-->O	B-c2P#2#1.00
+NN:-1	IN:of:0	NN:1-->B-c1A	O	B-c1C#4#0.21
+JJ:-1	CC:-1	JJ:-1	NN:-1-->B-c1A	O	B-c1A	I-c1A#2#0.40
+DT:-1	JJ:-1	NN:-1	NN:-1-->O	B-c1C	I-c1C	I-c1C#2#0.29
+IN:of:0	JJ:1	NNP:1-->O	B-c3C	I-c3C#2#0.40
+IN:from:0	JJ:1	NN:1	NNS:1-->B-c2P	B-c3C	I-c3C	I-c3C#2#0.67
+NNS:-1-->B-c1A#10#0.04
+IN:of:0	NNP:1	CC:-1	NNP:-1	IN:in:0-->O	B-c1C	O	B-c1C	B-c2P#2#1.00
+CD:1	CC:1	VB:1-->B-c3C	O	B-c3C#2#1.00
+DT:1	NNP:1-->O	B-c3C#3#0.19
+IN:on:0-->B-c2P#12#0.75
+JJ:1	NNP:1	.:1-->B-c3C	I-c3C	O#2#0.40
+VB:-1	DT:-1	NN:-1-->O	O	B-c1C#3#0.38
+NN:-1	IN:of:0	NN:1	NNS:-1-->B-c1A	O	B-c1C	I-c1C#2#0.67
+IN:of:0	NNP:1	CC:-1-->O	B-c1C	O#2#0.67
+CC:-1	DT:-1	NN:-1	IN:toward:0	DT:1-->O	O	B-c1A	B-c2P	O#2#1.00
+DT:-1-->B-c2P#2#0.01
+,:1	NNP:1	,:1-->O	B-c3C	O#2#0.50
+NNS:1-->B-c3A#2#0.01
+NN:-1	IN:of:0	NNP:1	NN:1-->B-c3A	O	B-c3C	I-c3C#3#0.43
+NN:-1	NN:-1-->B-c1C	I-c1C#7#0.14
+IN:among:0-->B-c2P#3#0.75
+IN:in:0	JJ:1	NN:1-->O	B-c1C	I-c1C#2#0.20
+NNP:1	CC:1-->B-c3C	O#2#0.13
+IN:in:0	CD:1-->B-c2P	B-c1A#2#0.67
+IN:from:0	JJ:1-->B-c2P	B-c3C#4#0.40
+IN:of:0	NNP:1-->O	B-c3C#10#0.21
+NNP:1	,:1	NNP:1-->B-c3C	O	B-c3C#2#0.33
+IN:of:0	NNS:1-->O	B-c1C#3#0.27
+CC:-1	NN:-1-->O	B-c1A#4#0.29
+NNP:-1	IN:in:0	JJ:1-->B-c1C	B-c2P	B-c3C#2#1.00
+JJ:-1	JJ:-1-->B-c1C	I-c1C#7#0.39
+NNP:1	NNP:1	NN:1-->B-c3C	I-c3C	I-c3C#2#1.00
+IN:after:0	NN:-1-->B-c2P	B-c1C#2#0.40
+JJ:1	NNS:-1	,:-1-->B-c3C	I-c3C	O#2#0.33
+JJ:-1	NNS:-1-->B-c3A	I-c3A#3#0.05
+JJ:-1-->B-c2P#2#0.01
+NN:-1	IN:of:0	JJ:1	JJ:1-->B-c3A	O	B-c3C	I-c3C#2#0.50
+NN:-1	IN:of:0	JJ:1	NN:-1-->B-c1A	O	B-c1C	I-c1C#2#1.00
+DT:-1	NN:-1-->O	B-c1A#30#0.42
+JJ:-1	NN:-1	IN:of:0-->B-c3A	I-c3A	O#4#0.14
+JJ:1	NN:1	.:1-->B-c3C	I-c3C	O#8#0.33
+VBN:-1	IN:by:0	JJ:1	JJ:1	NN:1-->B-c2P	I-c2P	B-c3C	I-c3C	I-c3C#2#1.00
+MD:-1-->B-c2P#3#0.16
+IN:against:0	NNP:1-->B-c2P	B-c3C#6#0.86
+JJ:1	JJ:1	NN:1	.:1-->B-c3C	I-c3C	I-c3C	O#4#0.67
+,:-1	DT:-1	NN:-1	IN:of:0	NNS:-1-->O	O	B-c1A	O	B-c1C#2#1.00
+DT:1	JJ:1-->O	B-c3C#11#0.31
+NN:-1	IN:with:0-->B-c1C	B-c2P#4#0.29
+VBD:1-->B-c2P#2#0.05
+CD:1-->B-c1A#4#0.12
+NNP:1	NN:-1	NNS:-1-->B-c1C	I-c1C	I-c1C#3#0.75
+DT:1	JJ:-1-->O	B-c1A#4#0.33
+IN:with:0-->B-c2P#21#0.35
+CC:1	NNP:-1-->O	B-c3C#3#0.60
+JJ:-1-->B-c1A#25#0.10
+IN:after:0-->B-c2P#4#0.40
+IN:of:0	NNS:1-->O	B-c3C#2#0.18
+DT:-1	NN:-1	IN:of:0	NN:1-->O	B-c1A	O	B-c1C#2#0.50
+JJ:1	JJ:-1	NNS:-1	IN:from:0-->B-c1C	I-c1C	I-c1C	B-c2P#2#1.00
+CD:1	CC:1	VB:1	CD:1-->B-c3C	O	B-c3C	I-c3C#2#1.00
+IN:of:0	NNP:1	NNS:-1	VBD:-1	IN:from:0	JJ:1-->O	B-c1C	I-c1C	B-c2P	I-c2P	B-c3C#2#1.00
+,:-1	IN:in:0-->O	B-c2P#2#0.67
+NNP:-1	CC:-1	NNP:-1-->B-c1C	O	B-c1C#3#0.75
+NN:1	NN:1	NN:1-->B-c3C	I-c3C	I-c3C#2#0.22
+JJ:-1	NN:-1-->B-c1C	I-c1C#17#0.15
+NN:-1	,:-1-->B-c3C	O#3#0.10
+NNP:-1	VBD:-1-->B-c3C	O#2#0.17
+NN:1	NNS:1-->B-c3C	I-c3C#11#0.21
+NN:-1	CC:-1	NN:-1-->O	O	B-c1A#2#0.25
+NN:-1	IN:with:0	NN:1-->B-c1C	B-c2P	B-c3C#2#0.67
+IN:of:0	JJ:1	NNS:1-->O	B-c3C	I-c3C#3#0.43
+IN:in:0	DT:1	NN:-1	IN:of:0-->B-c2P	O	B-c1A	O#2#0.25
+VBD:-1	IN:with:0-->B-c2P	I-c2P#5#0.71
+JJ:-1	NN:-1	IN:in:0	DT:1	NN:-1	IN:of:0-->B-c1C	I-c1C	B-c2P	O	B-c3A	O#2#0.67
+IN:by:0	JJ:1	JJ:1-->B-c2P	B-c3C	I-c3C#2#0.50
+JJ:1-->B-c3A#7#0.02
+NNP:-1	NN:-1	NNS:-1-->B-c1C	I-c1C	I-c1C#2#0.50
+NNP:1	VBN:-1	IN:by:0-->B-c1C	B-c2P	I-c2P#2#1.00
+NNP:1	NNS:1	VBD:1-->B-c3C	I-c3C	O#3#0.75
+VBN:-1	IN:by:0	JJ:1-->B-c2P	I-c2P	B-c3C#2#0.40
+JJ:-1	NN:-1	NN:-1-->B-c1A	I-c1A	I-c1A#2#0.13
+JJ:1	NNS:1-->B-c3C	I-c3C#23#0.41
+NN:-1	VBG:-1	NN:-1	IN:of:0	JJ:1-->B-c1A	I-c1A	I-c1A	O	B-c1C#2#0.67
+CC:1	NNP:1-->O	B-c3C#6#0.33
+JJ:-1	NN:-1	IN:of:0	NNP:1-->B-c1A	I-c1A	O	B-c1C#2#0.33
+DT:1	NNS:1-->O	B-c3C#2#0.29
+NNP:-1	CC:-1-->B-c3C	O#2#0.15
+VBN:-1-->B-c2P#29#0.24
+DT:-1	JJS:-1-->O	B-c3C#2#0.67
+DT:-1	NN:-1	IN:in:0-->O	B-c1A	B-c2P#2#0.67
+VBG:-1	NN:-1-->O	B-c1A#2#0.14
+NNP:-1	IN:on:0-->B-c1C	B-c2P#2#1.00
+NN:-1-->B-c3C#5#0.01
+NN:1-->B-c1C#15#0.04
+NNP:-1	VBZ:-1	JJ:-1-->O	O	B-c1C#2#1.00
+NNP:1	NNS:1	.:1-->B-c3C	I-c3C	O#2#0.18
+RB:-1	VBN:-1	IN:with:0	NNP:1-->B-c2P	I-c2P	I-c2P	B-c3C#2#1.00
+JJ:-1	NNS:-1	IN:of:0-->B-c3A	I-c3A	O#2#0.15
+CC:-1	NNP:-1	IN:in:0	NNP:1-->O	B-c1C	B-c2P	B-c3C#2#0.67
+NN:1	NN:1	NN:1	NNS:1-->B-c3C	I-c3C	I-c3C	I-c3C#2#1.00
+DT:1	NN:-1	IN:of:0-->O	B-c3A	O#7#0.47
+VB:-1	NNP:-1-->O	B-c1C#2#0.40
+NN:-1	NN:-1	IN:of:0-->B-c1A	I-c1A	O#2#0.29
+DT:-1	NN:-1	IN:of:0	NNS:1-->O	B-c1A	O	B-c1C#2#1.00
+NNP:-1	NNS:-1-->B-c3C	I-c3C#2#0.12
+NNP:-1	NN:-1-->B-c1A	I-c1A#3#0.10
+CC:-1	NNP:-1-->O	B-c3C#4#0.24
+NN:-1	IN:of:0	JJ:1	NNS:-1-->B-c1A	O	B-c1C	I-c1C#4#0.57
+CC:-1	JJ:-1-->O	B-c1A#3#0.17
+NN:-1-->B-c1A#56#0.12
+NNP:1	NNS:1	CC:1-->B-c3C	I-c3C	O#2#0.33
+JJ:1	JJ:1	NN:1-->B-c3C	I-c3C	I-c3C#12#0.60
+IN:in:0	JJ:1-->O	B-c1A#2#0.05
+NNP:1	NNS:1	VBD:1	VBN:1-->B-c3C	I-c3C	O	O#2#1.00
+VBN:1	TO:1-->B-c2P	I-c2P#3#0.75
+IN:in:0	NNS:1-->B-c2P	B-c3C#4#0.67
+CD:1	CC:1-->B-c3C	O#3#0.60
+JJ:1	CC:1	JJ:1-->B-c3C	O	B-c3C#2#0.67
+JJ:1	NN:-1	IN:in:0-->B-c1C	I-c1C	B-c2P#5#0.71
+CD:1	NNS:1-->B-c1A	B-c1C#2#0.33
+JJ:-1	NN:-1-->B-c1A	I-c1A#13#0.11
+DT:-1	NN:-1	IN:toward:0-->O	B-c1A	B-c2P#2#1.00
+JJ:-1	NN:-1	IN:in:0-->B-c1C	I-c1C	B-c2P#6#0.35
+IN:of:0	NNP:1	CC:-1	NNP:-1	IN:in:0	NNP:1-->O	B-c1C	O	B-c1C	B-c2P	B-c3C#2#1.00
+VBD:-1	NN:-1-->O	B-c1C#2#0.67
+,:-1	NNP:-1-->O	B-c1C#2#0.25
+JJ:1	NNP:-1-->B-c1C	I-c1C#2#0.33
+DT:1	NN:-1	IN:of:0	NNP:1-->O	B-c3A	O	B-c3C#4#0.80
+NNS:1	,:1-->B-c3C	O#4#0.17
+NN:1	NNS:1	,:1-->B-c3C	I-c3C	O#2#0.40
+NNP:-1	NNS:-1	IN:in:0-->B-c1C	I-c1C	B-c2P#2#1.00
+NN:1	NN:-1-->B-c3C	I-c3C#2#0.11
+TO:-1	VB:-1	DT:-1	NN:-1-->O	O	O	B-c1A#2#0.33
+NN:-1	NNS:-1	IN:of:0-->B-c1A	I-c1A	O#2#0.40
+DT:-1	JJ:-1	NN:-1	NN:-1	IN:for:0	DT:1-->O	B-c1C	I-c1C	I-c1C	B-c2P	O#2#1.00
+IN:of:0	NNP:1	NN:1-->O	B-c3C	I-c3C#3#0.30
+IN:by:0	NN:1	NNS:1-->B-c2P	B-c3C	I-c3C#3#1.00
+IN:of:0	NNP:-1	IN:on:0-->O	B-c1C	B-c2P#2#1.00
+JJ:-1	NNS:-1	,:-1-->B-c1C	I-c1C	O#2#0.50
+IN:in:0	NN:1	NNS:1	.:1-->B-c2P	B-c3C	I-c3C	O#2#1.00
+IN:as:0-->B-c2P#4#0.20
+DT:1	NN:-1	IN:of:0	NNP:1	NN:1-->O	B-c3A	O	B-c3C	I-c3C#2#1.00
+DT:-1	NN:-1	IN:of:0	NNP:-1-->O	B-c1A	O	B-c1C#3#1.00
+NNS:-1-->B-c3A#2#0.01
+NN:1	NNS:-1-->B-c1C	I-c1C#5#0.38
+NNP:-1	,:-1	DT:-1	NN:-1-->O	O	O	B-c1A#2#1.00
+IN:of:0	JJ:1	NN:-1-->O	B-c1C	I-c1C#4#0.80
+,:-1	DT:-1	NN:-1	IN:of:0	NNP:1-->O	O	B-c1A	O	B-c1C#2#0.50
+NNP:-1-->B-c1C#46#0.32
+NN:-1	JJ:-1-->B-c1C	I-c1C#2#0.25
+IN:as:0	DT:1-->B-c2P	O#3#0.60
+IN:in:0	JJ:1-->B-c2P	B-c3C#19#0.49
+IN:of:0	NNP:1	,:1	NNP:-1-->O	B-c1C	O	B-c1C#2#1.00
+VBZ:-1	JJ:-1-->O	B-c1C#3#0.43
+IN:in:0	NN:-1	IN:with:0-->B-c2P	I-c2P	I-c2P#2#0.50
+IN:toward:0	DT:1	NN:-1-->B-c2P	O	B-c1A#2#1.00
+CD:1-->B-c3C#6#0.18
+,:1	CC:1	NNP:-1-->O	O	B-c3C#2#1.00
+NN:-1	IN:of:0	NNP:-1	IN:on:0-->B-c1A	O	B-c1C	B-c2P#2#1.00
+IN:in:0-->B-c2P#68#0.50
+DT:1	NN:-1	IN:of:0	JJ:1-->O	B-c3A	O	B-c3C#3#0.60
+DT:1	NN:1-->O	B-c1C#2#0.06
+VBZ:-1	JJ:-1	NN:-1-->O	B-c1C	I-c1C#2#1.00
+JJ:-1	NN:-1	IN:in:0	DT:1	NN:-1	IN:of:0	JJ:1-->B-c1C	I-c1C	B-c2P	O	B-c3A	O	B-c3C#2#1.00
+DT:1	JJ:1	NNP:1-->O	B-c3C	I-c3C#2#0.67
+CC:-1	JJ:-1	NN:-1-->O	B-c1C	I-c1C#3#0.33
+JJ:1	NNS:1	.:1-->B-c3C	I-c3C	O#14#0.50
+JJ:-1-->B-c3C#5#0.02
+VBN:-1	IN:in:0-->B-c2P	I-c2P#3#0.14
+NNS:-1	IN:of:0-->B-c3A	O#2#0.04
+DT:-1	NN:-1	IN:of:0-->O	B-c1A	O#24#0.56
+IN:in:0	NNP:1-->O	B-c1C#5#0.22
+IN:of:0	NN:1	NNS:-1-->O	B-c1C	I-c1C#3#1.00
+NN:1	CC:1-->B-c3C	O#2#0.08
+NN:-1	IN:of:0	NNP:1	,:1	NNP:-1	CC:-1	NNP:-1-->B-c1A	O	B-c1C	O	B-c1C	O	B-c1C#2#1.00
+IN:in:0	JJ:1	NNS:1-->B-c2P	B-c3C	I-c3C#6#0.50
+TO:-1	VB:-1-->O	B-c1C#2#0.08
+DT:1	NNS:-1-->O	B-c1C#2#0.50
+JJ:-1	NN:-1	IN:of:0-->B-c1A	I-c1A	O#8#0.29
+IN:as:0	VBN:-1	IN:with:0-->O	B-c2P	I-c2P#2#1.00
+RB:-1	JJ:-1-->O	B-c1C#2#0.50
+JJS:-1-->B-c3C#2#0.50
+VBN:-1	TO:-1	VB:-1	JJ:-1-->O	O	O	B-c1C#2#1.00
+,:-1	CC:-1	DT:-1	NN:-1-->O	O	O	B-c1A#3#0.75
+NN:-1	CC:-1	NN:-1	IN:of:0-->O	O	B-c1A	O#2#0.40
+JJ:1	NNS:1-->B-c1C	I-c1C#2#0.04
+NNP:1	NN:-1	IN:by:0-->B-c1C	I-c1C	B-c2P#2#1.00
+RB:-1	IN:for:0-->O	B-c2P#2#1.00
+JJ:1	NN:-1-->B-c3C	I-c3C#2#0.07
+IN:of:0	JJ:1	JJ:-1	NNS:-1	IN:from:0-->O	B-c1C	I-c1C	I-c1C	B-c2P#2#1.00
+JJ:-1-->B-c1C#38#0.16
+JJ:1	NN:1	,:-1-->B-c3C	I-c3C	O#2#0.40
+NN:-1	IN:of:0-->B-c1A	O#39#0.28
+DT:-1	NNS:-1-->O	B-c1A#7#0.27
+NNP:-1	CC:-1-->B-c1C	O#5#0.38
+RB:-1	VBN:-1-->B-c2P	I-c2P#3#0.20
+NNP:1	NNS:1	VBD:1	VBN:1	.:1-->B-c3C	I-c3C	O	O	O#2#1.00
+(:-1	NNP:-1-->O	B-c1A#3#1.00
+JJ:1	NNS:-1-->B-c1C	I-c1C#8#0.36
+NN:-1	IN:of:0	NNP:1-->B-c1A	O	B-c1C#8#0.26
+NN:-1	IN:of:0	NNP:1	,:1-->B-c3A	O	B-c3C	O#2#0.50
+JJ:1	NN:-1-->B-c1C	I-c1C#12#0.40
+IN:of:0	NNP:1	,:1-->O	B-c1C	O#2#0.40
+VBD:-1	IN:from:0	JJ:1-->B-c2P	I-c2P	B-c3C#2#1.00
+NNP:1	CC:-1	NNP:-1	IN:in:0-->B-c1C	O	B-c1C	B-c2P#2#1.00
+JJ:1	NNS:-1-->B-c3A	I-c3A#3#0.14
+NN:1-->B-c3C#47#0.12
+DT:-1	JJ:-1	JJ:-1-->O	B-c1C	I-c1C#3#0.33
+DT:1	JJ:-1	NN:-1	IN:of:0-->O	B-c1A	I-c1A	O#2#0.40
+CD:-1-->B-c1A#2#0.11
+CC:-1	NNP:-1	IN:by:0-->O	B-c1C	B-c2P#2#1.00
+NNP:1	,:1	NNP:-1	CC:-1-->B-c1C	O	B-c1C	O#2#1.00
+NNS:1	CC:1-->B-c3C	O#2#0.09
+NN:1	NN:-1-->B-c1C	I-c1C#3#0.16
+JJ:1	JJ:1-->B-c3C	I-c3C#20#0.53
+JJ:1	NNS:-1-->B-c3C	I-c3C#4#0.18
+NN:1	VBD:1-->B-c3C	O#2#0.18
+NNP:1	CC:-1-->B-c1C	O#2#0.33
+VBN:-1	IN:with:0	JJ:1-->B-c2P	I-c2P	B-c3C#2#0.50
+CC:1	JJ:1-->O	B-c3C#5#0.31
+IN:with:0	JJ:1-->B-c2P	B-c3C#8#0.44
+CC:1	VB:1-->O	B-c3C#2#1.00
+JJ:-1	NNS:-1-->B-c1C	I-c1C#12#0.21
+,:1	NNP:1-->O	B-c3C#2#0.20
+IN:by:0-->B-c2P#19#0.40
+IN:on:0	DT:1-->B-c2P	O#4#0.80
+RB:-1	IN:for:0	JJ:1-->O	B-c2P	B-c3C#2#1.00
+IN:of:0	DT:1	NNS:-1-->O	O	B-c1C#2#0.67
+IN:from:0	NNP:1-->B-c2P	B-c3C#2#1.00
+IN:of:0	JJ:1-->O	B-c3C#10#0.20
+IN:with:0	NN:1-->B-c2P	B-c3C#5#0.42
+JJ:-1	NN:-1	NNS:-1-->B-c1C	I-c1C	I-c1C#2#0.25
+NNP:1	NN:1	.:1-->B-c3C	I-c3C	O#7#0.58
+JJ:-1	NN:-1	IN:of:0	JJ:1-->B-c1A	I-c1A	O	B-c1C#2#0.40
+NNP:1	JJ:1	NNS:1-->B-c3C	I-c3C	I-c3C#2#1.00
+DT:1	NN:-1	IN:of:0	JJ:1	JJ:1-->O	B-c3A	O	B-c3C	I-c3C#2#1.00
+IN:toward:0-->B-c2P#2#1.00
+,:1	NNP:-1-->O	B-c1C#2#0.33
+NNS:1	.:1-->B-c3C	O#4#0.05
+NNS:1-->B-c1C#5#0.03
+VBG:-1-->B-c2P#7#0.19
+VB:-1	DT:-1	NN:-1	IN:of:0-->O	O	B-c1A	O#2#0.50
+DT:-1	NN:-1	IN:of:0	JJ:1-->O	B-c1A	O	B-c1C#6#0.55
+DT:-1	JJ:-1-->O	B-c1A#5#0.09
+NN:1	NN:1-->B-c3C	I-c3C#11#0.18
+NNP:1-->B-c3C#65#0.27
+CC:1	NNP:1	NNS:1-->O	B-c3C	I-c3C#2#1.00
+NNP:-1	,:-1	DT:-1	NN:-1	IN:of:0-->O	O	O	B-c1A	O#2#1.00
+NN:1	NNP:1-->B-c3C	I-c3C#2#0.14
+DT:-1	NN:-1	IN:of:0	NNS:-1-->O	B-c1A	O	B-c1C#2#1.00
+DT:-1	JJ:-1	NN:-1	IN:of:0-->O	B-c3A	I-c3A	O#3#0.30
+IN:of:0	NNP:1	CC:-1	NNP:-1-->O	B-c1C	O	B-c1C#2#0.67
+DT:-1	NN:-1	IN:of:0	NNP:1-->O	B-c1A	O	B-c1C#4#0.40
+DT:1	CD:1-->O	B-c3C#2#0.67
+CC:1	NN:-1-->O	B-c1C#2#0.33
+CC:1	NN:-1	NN:-1-->O	B-c1C	I-c1C#2#1.00
+IN:at:0-->B-c2P#6#0.75
+IN:during:0	NNP:1-->B-c2P	B-c3C#2#1.00
+CC:-1	NN:-1	IN:of:0-->O	B-c1A	O#2#0.25
+NNS:-1	IN:with:0	JJ:1-->B-c1C	B-c2P	B-c3C#3#0.50
+IN:of:0	NNS:-1-->O	B-c1C#2#1.00
+NNP:-1	IN:by:0	NN:1-->B-c1C	B-c2P	B-c3C#2#1.00
+RB:-1-->B-c1C#2#0.03
+NNP:-1	IN:by:0-->B-c1C	B-c2P#5#1.00
+JJ:-1	NN:-1	NN:-1	IN:for:0	DT:1-->B-c1C	I-c1C	I-c1C	B-c2P	O#2#1.00
+CD:-1	NNS:-1	IN:of:0-->B-c1A	I-c1A	O#2#0.67
+,:-1	NNP:-1	NNS:-1-->O	B-c1C	I-c1C#2#0.67
+DT:1	JJ:-1	NN:-1-->O	B-c1A	I-c1A#2#0.25
+DT:-1	JJ:-1	NN:-1	NN:-1	IN:for:0-->O	B-c1C	I-c1C	I-c1C	B-c2P#2#0.67
+JJ:-1	CC:-1	JJ:-1	NN:-1	IN:of:0-->B-c1A	O	B-c1A	I-c1A	O#2#1.00
+VBD:-1	JJR:-1	IN:during:0-->O	O	B-c2P#2#1.00
+NNP:-1	IN:by:0	NN:1	NNS:1-->B-c1C	B-c2P	B-c3C	I-c3C#2#1.00
+DT:1	NN:-1	IN:of:0-->O	B-c1A	O#3#0.20
+IN:than:0-->B-c2P#3#0.43
+VBD:-1	IN:from:0-->B-c2P	I-c2P#3#1.00
+JJ:-1	NN:-1	IN:of:0	DT:1-->B-c1A	I-c1A	O	O#2#0.33
+IN:of:0	NN:-1	IN:in:0-->O	B-c1C	B-c2P#3#0.75
+IN:during:0-->B-c2P#5#1.00
+NNP:1	NNS:-1	VBD:-1-->B-c1C	I-c1C	B-c2P#2#0.67
+TO:-1	VB:-1	JJ:-1	NNS:-1-->O	O	B-c1C	I-c1C#2#0.40
+NNP:-1	CC:-1	JJ:-1-->O	O	B-c1C#2#1.00
+JJ:-1	JJ:-1	NN:-1	IN:in:0-->B-c1C	I-c1C	I-c1C	B-c2P#2#1.00
+NNP:1	NN:1-->B-c3C	I-c3C#14#0.28
+VBN:-1	IN:with:0-->B-c2P	I-c2P#12#0.57
+NNS:-1	,:-1	CC:-1	DT:-1	NN:-1-->O	O	O	O	B-c1A#2#0.67
+NNP:1	NN:1	NN:1-->B-c3C	I-c3C	I-c3C#2#0.40
+DT:1	NN:-1-->O	B-c1A#6#0.25
+JJR:-1	IN:during:0-->O	B-c2P#2#1.00
+NNS:-1	IN:of:0-->B-c1A	O#6#0.12
+,:-1	DT:-1	NN:-1-->O	O	B-c1A#7#0.44
+TO:-1-->B-c2P#3#0.07
+NN:-1	IN:against:0-->B-c1C	B-c2P#2#0.50
+NN:-1	IN:of:0	NNS:-1-->B-c1A	O	B-c1C#2#1.00
+IN:of:0	NNP:1	,:1	NNP:-1	CC:-1	NNP:-1-->O	B-c1C	O	B-c1C	O	B-c1C#2#1.00
+CC:-1	DT:-1	NN:-1-->O	O	B-c1A#5#0.83
+CC:1	JJ:1	JJ:1-->O	B-c3C	I-c3C#2#0.50
+IN:by:0	NNP:1-->B-c2P	B-c3C#3#0.23
+VBN:-1	IN:with:0	DT:1-->B-c2P	I-c2P	O#5#0.83
+VBG:1-->B-c2P#7#0.33
+DT:-1	JJ:-1	NN:-1-->O	B-c1C	I-c1C#4#0.11
+NN:-1	IN:of:0	JJ:1	NN:1-->B-c1A	O	B-c1C	I-c1C#2#0.14
+NN:1	NNS:-1	VBN:-1-->B-c1C	I-c1C	B-c2P#2#0.67
+IN:within:0-->B-c2P#2#1.00
+NNP:-1	IN:in:0	NNP:1-->B-c1C	B-c2P	B-c3C#2#0.67
+JJ:1-->B-c1C#43#0.14
+IN:into:0	NNP:1-->O	B-c1C#2#1.00
+DT:-1	NN:-1	IN:of:0	NNP:-1	IN:on:0-->O	B-c1A	O	B-c1C	B-c2P#2#1.00
+JJ:-1	JJ:-1	NN:-1-->B-c1C	I-c1C	I-c1C#6#0.40
+IN:with:0	JJ:1	NN:1	.:1-->B-c2P	B-c3C	I-c3C	O#2#1.00
+NNS:-1	IN:with:0-->B-c1C	B-c2P#4#0.33
+DT:1	NNP:1	NN:-1	NNS:-1-->O	B-c1C	I-c1C	I-c1C#2#1.00
+IN:in:0	DT:1	NN:-1	IN:of:0-->B-c2P	O	B-c3A	O#3#0.38
+IN:in:0	JJ:1	NN:1	.:1-->B-c2P	B-c3C	I-c3C	O#3#1.00
+IN:in:0	NNP:1-->B-c2P	B-c1C#2#0.09
+VBN:1-->B-c2P#4#0.21
+IN:of:0	JJ:1	NNS:-1-->O	B-c1C	I-c1C#6#0.75
+NNP:1	NNP:1	NNS:1-->B-c3C	I-c3C	I-c3C#2#0.67
+DT:1	NN:1-->O	B-c3A#4#0.12
+JJ:-1	NNS:-1	IN:in:0-->B-c1C	I-c1C	B-c2P#3#0.50
+WDT:-1	MD:-1-->O	B-c2P#3#1.00
+NNP:-1	IN:of:0-->B-c1A	O#3#1.00
+NNP:1	NNS:-1-->B-c1C	I-c1C#3#0.33
+IN:of:0	JJ:1	JJ:1-->O	B-c1C	I-c1C#2#0.33
+DT:-1	IN:of:0	NN:1-->O	O	B-c3C#2#1.00
+IN:for:0	JJ:1-->B-c2P	B-c3C#2#0.22
+IN:against:0	NNP:1	NN:1-->B-c2P	B-c3C	I-c3C#2#1.00
+NNP:-1	NN:-1	NN:-1-->B-c1A	I-c1A	I-c1A#3#0.30
+IN:in:0	DT:1	NN:-1-->B-c2P	O	B-c1A#2#0.22
+CD:1	NNS:1-->B-c3A	B-c3C#2#0.33
+NNS:-1-->B-c1C#14#0.06
+CC:1	DT:-1	NNS:-1-->O	O	B-c1A#2#1.00
+NNS:-1	IN:with:0	JJ:1	NN:1-->B-c1C	B-c2P	B-c3C	I-c3C#2#1.00
+JJ:-1	CC:-1-->B-c1A	O#2#0.33
+NNP:1	VBN:-1-->B-c1C	B-c2P#3#1.00
+JJ:1	NNP:1	NN:1-->B-c3C	I-c3C	I-c3C#2#0.29
+IN:in:0-->B-c1C#2#0.01
+JJ:1	NNS:-1	IN:of:0	JJ:1-->B-c3A	I-c3A	O	B-c3C#2#0.67
+VB:-1	DT:-1	NN:-1-->O	O	B-c1A#3#0.38
+DT:-1	NNS:-1	IN:of:0	NNP:1-->O	B-c1A	O	B-c1C#2#0.40
+JJ:1	NN:-1	IN:in:0	JJ:1-->B-c1C	I-c1C	B-c2P	B-c3C#2#0.67
+WDT:-1	VBZ:-1-->O	B-c2P#2#1.00
+IN:with:0	JJ:1-->B-c2P	B-c1C#2#0.11
+NNP:1	NN:1	CC:1	NN:1-->B-c3C	I-c3C	O	B-c3C#2#0.67
+JJ:1	NN:1	NNS:1-->B-c3C	I-c3C	I-c3C#9#0.45
+IN:of:0	DT:1	NNP:1-->O	O	B-c1C#2#0.33
+IN:in:0	DT:1	NN:1-->B-c2P	O	B-c3A#2#0.33
+NNS:1-->B-c3C#13#0.07
+NNP:1	CC:-1	NNP:-1	IN:in:0	NNP:1-->B-c1C	O	B-c1C	B-c2P	B-c3C#2#1.00
+IN:in:0	DT:1	NN:-1	IN:of:0	JJ:1-->B-c2P	O	B-c3A	O	B-c3C#2#1.00
+DT:-1	NN:-1-->O	B-c1C#7#0.10
+VBZ:-1-->B-c2P#2#0.05
+JJ:-1	NNS:-1-->B-c1A	I-c1A#9#0.16
+NN:-1	IN:of:0	NNP:1	NN:-1-->B-c1A	O	B-c1C	I-c1C#2#0.67
+NN:-1	IN:of:0-->B-c3A	O#14#0.10
+NNP:1	NN:-1-->B-c1C	I-c1C#10#0.53
+VB:1-->B-c3C#3#0.15
+JJ:1	NNS:-1	IN:from:0-->B-c1C	I-c1C	B-c2P#3#1.00
+NNP:1	CC:-1	NNP:-1-->B-c1C	O	B-c1C#2#0.50
+NNP:-1	NN:-1-->B-c1C	I-c1C#8#0.26
+NN:-1	IN:of:0	DT:1-->B-c1A	O	O#2#0.11
+IN:in:0	NN:-1-->B-c2P	I-c2P#2#0.50
+NNP:-1-->B-c3C#11#0.08
+NN:-1	IN:in:0-->B-c1C	B-c2P#5#0.09
+NNS:-1	IN:in:0-->B-c1C	B-c2P#2#0.12
+JJ:-1	NN:-1-->B-c3A	I-c3A#4#0.03
+RB:-1-->B-c2P#4#0.05
+IN:of:0	NNP:1	,:1-->O	B-c3C	O#2#0.40
+NN:-1	NNS:-1-->B-c1A	I-c1A#2#0.06
+VBG:1	JJ:1-->B-c2P	B-c3C#3#0.60
+NN:-1	IN:of:0	NNP:1-->B-c3A	O	B-c3C#7#0.23
+NNP:-1	CD:-1-->B-c3C	I-c3C#3#1.00
+NN:1	,:-1-->B-c3C	O#2#0.10
+IN:in:0	JJ:1	NNS:1	.:1-->B-c2P	B-c3C	I-c3C	O#3#0.75
+JJ:-1	NN:-1-->B-c3C	I-c3C#3#0.03
+IN:in:0	NN:1	TO:1-->B-c2P	I-c2P	I-c2P#2#1.00
+JJ:1	JJ:-1-->B-c1C	I-c1C#4#0.50
+VBD:-1	IN:with:0	NNP:1-->B-c2P	I-c2P	B-c3C#3#1.00
+IN:as:0	VBN:-1-->O	B-c2P#2#1.00
+IN:of:0	JJ:1	JJ:-1-->O	B-c1C	I-c1C#3#1.00
+NN:-1	IN:toward:0	DT:1-->B-c1A	B-c2P	O#2#1.00
+DT:1	NN:1	,:1-->O	B-c3A	O#2#1.00
+IN:after:0	NN:-1	IN:with:0-->B-c2P	B-c1C	B-c2P#2#0.50
+NNP:1	NN:1	CC:1-->B-c3C	I-c3C	O#2#0.33
+VBG:-1	NN:-1	IN:of:0-->O	B-c1A	O#2#0.40
+CC:-1	NNP:-1	NNS:-1-->O	B-c3C	I-c3C#2#1.00
+DT:1	JJ:-1-->O	B-c3C#2#0.17
+DT:1	JJ:-1-->O	B-c1C#2#0.17
+IN:of:0	NN:-1-->O	B-c1C#9#0.82
+JJ:1-->B-c3C#93#0.29
+VBG:-1	NNP:-1-->O	B-c1C#2#0.67
+VB:-1-->B-c1C#3#0.05
+VBN:-1	IN:with:0	DT:-1	IN:of:0	NN:1-->B-c2P	I-c2P	O	O	B-c3C#2#1.00
+DT:1	JJ:1	NN:1-->O	B-c3C	I-c3C#4#0.25
+NN:-1	IN:of:0	JJ:1-->B-c3A	O	B-c3C#6#0.15
+IN:from:0-->B-c2P#13#0.59
+JJ:1	JJ:1	NN:1	NN:1	NNS:1-->B-c3C	I-c3C	I-c3C	I-c3C	I-c3C#2#1.00
+NNP:-1	CD:-1	,:-1-->B-c3C	I-c3C	O#2#1.00
+IN:in:0	NNP:1-->B-c2P	B-c3C#6#0.26
+NN:-1	VBG:-1-->B-c1A	I-c1A#2#0.40
+NNP:-1	NNS:-1-->B-c1C	I-c1C#6#0.38
+DT:1	NN:1	NN:1-->O	B-c3C	I-c3C#2#0.22
+NN:-1-->B-c3A#15#0.03
+NN:1-->B-c1A#3#0.01
+NNS:-1	IN:of:0	NNP:1-->B-c1A	O	B-c1C#2#0.14
