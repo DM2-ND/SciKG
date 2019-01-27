@@ -1,0 +1,11 @@
+*.torch
+models/*
+results/*
+resources/LM_dictionary1.txt
+resources/LM_dictionary2.txt
+resources/LM_dictionary3.txt
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
