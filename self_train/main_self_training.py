@@ -28,15 +28,15 @@ from Stmt_Extraction_Net import Stmt_Extraction_Net
 parser = argparse.ArgumentParser(description='PyTorch multi_input multi_output model')
 
 # Model parameters.
-parser.add_argument('--train', type=str, default=WORKDIR+'/stmts-demo-train.tsv',
-					help='location of the labeled training data')
+parser.add_argument('--train', type=str, default='../data/stmts-train.tsv',
+					help='location of the training set')
 parser.add_argument('--udata', type=str, default='./udata/stmts-demo-unlabeled-pubmed',
 					help='location of the unlabeled data')
-parser.add_argument('--eval', type=str, default=WORKDIR+'/stmts-demo-eval.tsv',
-					help='location of the unlabeled test data')
-parser.add_argument('--check_point', type=str, default='./models/supervised_model_seperate_010100100000.torch',
+parser.add_argument('--eval', type=str, default='../data/stmts-eval.tsv',
+					help='location of the evaluation set')
+parser.add_argument('--check_point', type=str, default='./models/supervised_model_011000000.torch',
 					help='location of the saved model')
-parser.add_argument('--out_file', type=str, default='./results/hope_evaluation_supervised_model',
+parser.add_argument('--out_file', type=str, default='./results/evaluation_supervised_model',
 					help='location of the saved results')
 parser.add_argument('--language_model', type=str, default=WORKDIR+'/code-preprocessing/word_language_model/model.pt',
 					help='language model checkpoint to use')
@@ -49,11 +49,11 @@ parser.add_argument('--seed', type=int, default=824,
 parser.add_argument('--epoch', type=int, default=1)
 parser.add_argument('--cuda', action='store_true',
 					help='use CUDA')
-parser.add_argument('--SH', action='store_true')
 parser.add_argument('--AR', action='store_true')
-parser.add_argument('--ST', action='store_true')
+parser.add_argument('--TC', action='store_true')
+parser.add_argument('--TCDEL', action='store_true')
+parser.add_argument('--SH', action='store_true')
 parser.add_argument('--DEL', action='store_true')
-parser.add_argument('--STDEL', action='store_true')
 parser.add_argument('--max_f1', type=list, default=[50, 50],
 					help='random seed')
 parser.add_argument('--max_std', type=list, default=[1,1])
@@ -80,7 +80,7 @@ def get_position(VB_index, index):
 			position = -1 if (index-vi<0) else 1
 	return position
 
-def auto_labeling(model, dataCenter, data_file, AR, ST, DEL, STDEL):
+def auto_labeling(model, dataCenter, data_file, AR, TC, TCDEL, SH, DEL):
 	AR_fact_file_name = './association_rules_fact.txt'
 	AR_condition_file_name = './association_rules_condition.txt'
 	support_threshold = 3
@@ -124,8 +124,9 @@ def auto_labeling(model, dataCenter, data_file, AR, ST, DEL, STDEL):
 			assert len(OUTs_batch[i][0]) == len(instance_list_batch[i].OUT[0])
 			fact_tags = []
 			cond_tags = []
-			if len(OUTs_batch[i][0]) > 15:
-				continue
+			if SH:
+				if len(OUTs_batch[i][0]) > 15:
+					continue
 			for j in range(len(OUTs_batch[i][0])):
 				y_predict = predicted_fact_tags[j].item()
 				tag = dataCenter.ID2Tag_fact[y_predict]
@@ -185,7 +186,7 @@ def auto_labeling(model, dataCenter, data_file, AR, ST, DEL, STDEL):
 					if not flag:
 						j += 1
 
-			if ST:
+			if TC:
 				fact_tags, corrected_fact = smooth_tag_sequence(fact_tags)
 				cond_tags, corrected_cond = smooth_tag_sequence(cond_tags)
 
@@ -198,7 +199,7 @@ def auto_labeling(model, dataCenter, data_file, AR, ST, DEL, STDEL):
 					continue
 				if fact_predicate_set & cond_predicate_set != set():
 					continue
-			if STDEL:
+			if TCDEL:
 				# print('using STDEL')
 				fact_tags, corrected_fact = smooth_tag_sequence(fact_tags)
 				cond_tags, corrected_cond = smooth_tag_sequence(cond_tags)
@@ -243,23 +244,26 @@ if __name__ == '__main__':
 	in_model_name = args.check_point
 	
 	out_model_string = '_model_SeT'
-	data_file = './data/hope_labeled'
+	data_file = './auto_ldata/labeled'
 
 	if args.AR:
 		out_model_string += '_AR'
 		data_file += '_AR'
-	if args.ST:
-		out_model_string += '_ST'
-		data_file += '_ST'
+	if args.TC:
+		out_model_string += '_TC'
+		data_file += '_TC'
+	if args.TCDEL:
+		out_model_string += '_TCDEL'
+		data_file += '_TCDEL'
+	if args.SH:
+		out_model_string += '_SH'
+		data_file += '_SH'
 	if args.DEL:
 		out_model_string += '_DEL'
 		data_file += '_DEL'
-	if args.STDEL:
-		out_model_string += '_STDEL'
-		data_file += '_STDEL'
 
 	if not args.enhance:
-		data_file += ('_seperate_'+str_config)
+		data_file += ('_'+str_config)
 	else:
 		data_file += ('_enhance_'+str_config)
 
@@ -298,7 +302,7 @@ if __name__ == '__main__':
 	udata_file = args.udata+'_part-1.tsv'
 	data_file += '_'+udata_file.split('/')[-1]
 
-	for index in range(6):
+	for index in range(5):
 		udata_file = udata_file.replace('part'+str(index-1), 'part'+str(index))
 		data_file = data_file.replace('part'+str(index-1), 'part'+str(index))
 
@@ -306,7 +310,7 @@ if __name__ == '__main__':
 		print 'data_file =', data_file
 
 		dataCenter.loading_dataset(None, None, udata_file, None)
-		auto_labeling(stmt_extraction_net, dataCenter, data_file, args.AR, args.ST, args.DEL, args.STDEL)
+		auto_labeling(stmt_extraction_net, dataCenter, data_file, args.AR, args.TC, args.TCDEL, args.SH, args.DEL)
 		dataCenter.loading_dataset(args.train, None, data_file, args.eval)
 
 		EXTRAIN_SENTENCEs, EXTRAIN_POSTAGs, EXTRAIN_CAPs, EXTRAIN_LM_SENTENCEs, EXTRAIN_POSCAPs, EXTRAIN_OUTs = shuffle(dataCenter.TEST_SENTENCEs, dataCenter.TEST_POSTAGs, dataCenter.TEST_CAPs, dataCenter.TEST_LM_SENTENCEs, dataCenter.TEST_POSCAPs, dataCenter.TEST_OUTs)

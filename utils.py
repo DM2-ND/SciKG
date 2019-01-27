@@ -3273,7 +3273,7 @@ def retrain_evaluation(model, file_name, dataCenter, threshold_fact, threshold_c
 
 	return max_f1, max_std
 
-def retrain_model(model, out_file, batch_size, dataCenter, device, weight_classes_fact, weight_classes_condition, tuple_sequence, out_model_name, in_model_name, max_f1, max_std, min_loss, num_pass):
+def retrain_model(model, out_file, batch_size, dataCenter, device, weight_classes_fact, weight_classes_condition, tuple_sequence, out_model_name, in_model_name, max_f1, max_std, num_pass):
 	raw_SENTENCEs, raw_POSTAGs, raw_CAPs, raw_LM_SENTENCEs, raw_POSCAPs, raw_OUTs = tuple_sequence
 
 	SENTENCEs, POSTAGs, CAPs, LM_SENTENCEs, POSCAPs, OUTs = shuffle(raw_SENTENCEs, raw_POSTAGs, raw_CAPs, raw_LM_SENTENCEs, raw_POSCAPs, raw_OUTs)
@@ -3334,14 +3334,10 @@ def retrain_model(model, out_file, batch_size, dataCenter, device, weight_classe
 		#print grad_norm
 		optimizer.step()
 
-		if loss.data[0] < min_loss:
-		 	min_loss = loss.data[0]
-		print('min-loss=', min_loss)
-
 		max_f1, max_std = retrain_evaluation(model, out_file, dataCenter, 0, 0, max_f1, max_std, out_model_name, num_pass, weight_classes_fact, weight_classes_condition)
 		print('MAX:', max_f1, max_std)
 
-	return max_f1, max_std, min_loss
+	return max_f1, max_std
 
 def retrain_ensemble_model(models, ensemble_model, out_file, batch_size, dataCenter, device, weight_classes_fact, weight_classes_condition, tuple_sequence, out_model_name, in_model_name, max_f1, max_std, min_loss, num_pass):
 	raw_SENTENCEs, raw_POSTAGs, raw_CAPs, raw_LM_SENTENCEs, raw_POSCAPs, raw_OUTs = tuple_sequence

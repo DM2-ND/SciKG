@@ -12,8 +12,9 @@ from config import *
 
 parser = argparse.ArgumentParser(description='PyTorch multi_input multi_output model')
 # Model parameters.
-parser.add_argument('--input', type=str, default=workdir+'/pubmed/in.txt')
-parser.add_argument('--output', type=str, default=workdir+'/pubmed/out.txt')
+parser.add_argument('--input', type=str, default='../data/anno-coref-demo.txt')
+parser.add_argument('--output', type=str, default='./udata/stmts-demo-unlabeled.tsv')
+parser.add_argument('--num', type=int, default=5)
 args = parser.parse_args()
 
 ###############################
@@ -129,30 +130,16 @@ def split_tokenize_unlabeled_data(fileoutput,filedata,docid_filelabel,num_parts)
     fw.close()
 
 if __name__ == '__main__':
-
-    filedata = WORKDIR+'/preprocessing/anno-coref-pubmed.t_lymphocyte.txt'
-    # filedata = WORKDIR+'/preprocessing/anno-coref-demo.new.txt'
-
     docid_filelabel = []
-    for filename in os.listdir(WORKDIR+"/label/train"):
+    for filename in os.listdir("../data/label/train"):
         docid = filename.split('-')[-1].split('.txt')[0]
         docid_filelabel.append(docid)
-    for filename in os.listdir(WORKDIR+"/label/eval"):
+    for filename in os.listdir("../data/label/eval"):
         docid = filename.split('-')[-1].split('.txt')[0]
         docid_filelabel.append(docid)
 
     print docid_filelabel
-    
-    filestmt = './udata/stmts-demo-unlabeled-pubmed.tsv'
+    split_tokenize_unlabeled_data(args.output,args.input,docid_filelabel,args.num)
 
-    split_tokenize_unlabeled_data(args.output,args.input,docid_filelabel,1)
-
-    # filepkl = 'stmts-demo.pkl.gz'
-
-#    genPKL(filepkl,filestmt,filedata)
-
-    # diriob = 'iob/'
-
-    # genIOB(diriob,filestmt,filedata)
 
 
