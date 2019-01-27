@@ -27,8 +27,8 @@ parser = argparse.ArgumentParser(description='Conditional Statement Extraction')
 
 parser.add_argument('--udata', type=str, default='./udata/stmts-demo-unlabeled-pubmed',
 					help='location of the unlabeled data')
-parser.add_argument('--check_point', type=str, default='./self_train/models/double_SeT_AR_ST_DEL_ensemble_supervised_model_seperate_111.torch',
-					help='location of the saved model')
+parser.add_argument('--check_point', type=str, default=WORKDIR+'models/best_model/SeT_AR_TC_SH_DEL_ensemble_supervised_model_111.torch',
+					help='location of the best saved ensemble model')
 parser.add_argument('--out_file', type=str, default='./predicts/tupels.txt')
 parser.add_argument('--language_model', type=str, default=WORKDIR+'/code-preprocessing/word_language_model/model.pt',
 					help='language model checkpoint to use')
@@ -187,7 +187,7 @@ if __name__ == '__main__':
 
 	dataCenter = DataCenter(args.wordembed, args.language_model, dim, device)
 
-	model_files = ['./self_train/models/supervised_model_SeT_AR_seperate_011000000000.torch', './self_train/models/supervised_model_SeT_AR_ST_seperate_000111000000.torch', './self_train/models/supervised_model_SeT_AR_STDEL_seperate_000000100000.torch']
+	model_files = [WORKDIR+'models/best_model/supervised_model_SeT_AR_SH_011000000.torch', WORKDIR+'models/best_model/supervised_model_SeT_AR_TC_SH_000111000.torch', WORKDIR+'models/best_model/supervised_model_SeT_AR_TCDEL_SH_000000100.torch']
 	print(model_files)
 
 	lm_model = single_model_load(model_files[0], device, dataCenter, args.seed, False, False)

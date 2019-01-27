@@ -18,15 +18,22 @@ mkdie results
 
 ### Supervised MIMO (single featrue with multi-input gates):
  
-python train.py --cuda --config 000111000 --language_model ./models/LM/model.pt --wordembed ./models/WE/pubmed-vectors=50.bin
+`python train.py --cuda --config 000111000 --language_model ./models/LM/model.pt --wordembed ./models/WE/pubmed-vectors=50.bin`
 
 ### Supervised MIMO (multi-input gates, multi-input ensembles):
 
-python train_ensemble.py --cuda --config 111 --language_model ./models/LM/model.pt --wordembed ./models/WE/pubmed-vectors=50.bin
+`python train_ensemble.py --cuda --config 111 --language_model ./models/LM/model.pt --wordembed ./models/WE/pubmed-vectors=50.bin`
 
 ### Semi-supervised MIMO (single featrue with multi-input gates)
 
-python main_self_training.py --cuda --language_model ./models/LM/model.pt --wordembed ./models/WE/pubmed-vectors=50.bin --check_point ../models/supervised_model_011000000.torch --AR --TC --SH --DEL
+`python main_self_training.py --cuda --language_model ./models/LM/model.pt --wordembed ./models/WE/pubmed-vectors=50.bin --check_point ../models/supervised_model_011000000.torch --AR --TC --SH --DEL`
+
+### Semi-supervised MIMO (multi-input gates, multi-input ensembles):
 
 ## DOWNLOAD
-DropBox link: 
+
+* The word embedding we use can be found [here](https://www.dropbox.com/sh/6yx1l8euehgw12k/AAB9mWc3m8H7niuEF7NBYUdRa?dl=0}{\underline{here}}\footnote{\url{https://www.dropbox.com/sh/6yx1l8euehgw12k/AAB9mWc3m8H7niuEF7NBYUdRa?dl=0}).
+
+* The pre-trained language model we use can be found [here](https://www.dropbox.com/sh/q1kehix8q58sxmh/AADU35QFu1ZMuNQFTiEYWSxUa?dl=0}{\underline{here}}\footnote{\url{https://www.dropbox.com/sh/q1kehix8q58sxmh/AADU35QFu1ZMuNQFTiEYWSxUa?dl=0}}).
+
+* Pre-trained model: For a quick use of the proposed semi-supervised MIMO model, we put the pre-trained model files [here](https://www.dropbox.com/sh/rfm95k9kopmfdpb/AACCUzHvpR2M3GOIs9nyNo1Ua?dl=0}{\underline{online}}\footnote{\url{https://www.dropbox.com/sh/rfm95k9kopmfdpb/AACCUzHvpR2M3GOIs9nyNo1Ua?dl=0}}).

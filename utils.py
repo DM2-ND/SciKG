@@ -3149,10 +3149,10 @@ def retrain_evaluation(model, file_name, dataCenter, threshold_fact, threshold_c
 	# if (macro_F1-macro_std) > (max_f1-max_std) and (macro_F1+macro_std) > (max_f1+max_std):
 	# if (macro_F1-macro_std) > (max_f1-max_std) and (macro_F1+macro_std > max_f1+max_std) and (macro_std < 3.0):
 	# if better and (macro_F1-macro_std > max_f1-max_std) and (macro_F1+macro_std > max_f1+max_std):
-	if macro_F1 > max_f1[1] and (macro_std < 4.0):
+	if macro_F1 > max_f1:
 	# if True:
-		max_f1 = [micro_F1, macro_F1]
-		max_std = [micro_std, macro_std]
+		max_f1 = macro_F1
+		max_std = macro_std
 		print('saving model ...')
 		torch.save(model.state_dict(), out_model_name)
 		print('saving done.')
@@ -3340,7 +3340,7 @@ def retrain_model(model, out_file, batch_size, dataCenter, device, weight_classe
 
 	return max_f1, max_std
 
-def retrain_ensemble_model(models, ensemble_model, out_file, batch_size, dataCenter, device, weight_classes_fact, weight_classes_condition, tuple_sequence, out_model_name, in_model_name, max_f1, max_std, min_loss, num_pass):
+def retrain_ensemble_model(models, ensemble_model, out_file, batch_size, dataCenter, device, weight_classes_fact, weight_classes_condition, tuple_sequence, out_model_name, in_model_name, max_f1, max_std, num_pass):
 	raw_SENTENCEs, raw_POSTAGs, raw_CAPs, raw_LM_SENTENCEs, raw_POSCAPs, raw_OUTs = tuple_sequence
 
 	SENTENCEs, POSTAGs, CAPs, LM_SENTENCEs, POSCAPs, OUTs = shuffle(raw_SENTENCEs, raw_POSTAGs, raw_CAPs, raw_LM_SENTENCEs, raw_POSCAPs, raw_OUTs)
@@ -3405,11 +3405,7 @@ def retrain_ensemble_model(models, ensemble_model, out_file, batch_size, dataCen
 		#print grad_norm
 		optimizer.step()
 
-		if loss.data[0] < min_loss:
-		 	min_loss = loss.data[0]
-		print('min-loss=', min_loss)
-
 		max_f1, max_std = evaluation_ensemble(models, out_file, dataCenter, 0, 0, max_f1, max_std, out_model_name, num_pass, False, weight_classes_fact, weight_classes_condition, ensemble_model, device)
 		print('MAX:', max_f1, max_std)
 
-	return max_f1, max_std, min_loss
+	return max_f1, max_std

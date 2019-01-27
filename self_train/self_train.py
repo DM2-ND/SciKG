@@ -25,7 +25,7 @@ from config import *
 from utils import *
 from Stmt_Extraction_Net import Stmt_Extraction_Net
 
-parser = argparse.ArgumentParser(description='PyTorch multi_input multi_output model')
+parser = argparse.ArgumentParser(description='Semi-supervised MIMO (single featrue with multi-input gates)')
 
 # Model parameters.
 parser.add_argument('--train', type=str, default=WORKDIR+'data/stmts-train.tsv',
@@ -51,9 +51,8 @@ parser.add_argument('--TC', action='store_true')
 parser.add_argument('--TCDEL', action='store_true')
 parser.add_argument('--SH', action='store_true')
 parser.add_argument('--DEL', action='store_true')
-parser.add_argument('--max_f1', type=list, default=[0, 0],
-					help='random seed')
-parser.add_argument('--max_std', type=list, default=[0,0])
+parser.add_argument('--max_f1', type=list, default=0)
+parser.add_argument('--max_std', type=list, default=0)
 
 args = parser.parse_args()
 

@@ -128,7 +128,9 @@ if __name__ == '__main__':
 	print weight_classes_condition
 	weight_classes_condition = weight_classes_condition.to(device)
 
-	# you can change it to your trained best models (LM, POS, CAP) for ensembles
+	# you can change it to your trained best supervised models (LM, POS, CAP) for ensembles
+	# here we use semi-supervised model just for example
+	# but actually should be supervised model that trained by train.py
 	model_files = ['./models/best_model/supervised_model_SeT_AR_SH_011000000.torch', './models/best_model/supervised_model_SeT_AR_TC_SH_000111000.torch', './models/best_model/supervised_model_SeT_AR_TCDEL_SH_000000100.torch']
 	print model_files
 
