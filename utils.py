@@ -1102,7 +1102,7 @@ def post_decoder(words, predicted_fact_tags, ID2Tag=None):
 		else:
 			index += 1
 
-	MIN = 10
+	MIN = 30
 	subject2predicate = dict()
 	for subject in f1_set:
 		min_dis = MIN
@@ -1110,8 +1110,8 @@ def post_decoder(words, predicted_fact_tags, ID2Tag=None):
 		for predicate in f2_set: 
 			if is_blocked(subject[1], predicate[1], f2_set):
 				continue
-			dis = predicate[1]-subject[1]
-			if dis < min_dis and dis > 0:
+			dis = predicate[1]-subject[2]
+			if dis < min_dis and dis >= 0:
 				min_dis = dis
 				t_predicate = predicate
 		subject2predicate[subject] = t_predicate
@@ -1124,8 +1124,8 @@ def post_decoder(words, predicted_fact_tags, ID2Tag=None):
 		for predicate in f2_set:
 			if is_blocked(predicate[1], _object[1], f2_set):
 				continue
-			dis = _object[1]-predicate[1]
-			if dis < min_dis and dis > 0:
+			dis = _object[1]-predicate[2]
+			if dis < min_dis and dis >= 0:
 				min_dis = dis
 				t_predicate = predicate
 		object2predicate[_object] = t_predicate
@@ -1138,8 +1138,8 @@ def post_decoder(words, predicted_fact_tags, ID2Tag=None):
 		for subject in f1_set:
 			if is_blocked(subject[1], predicate[1], f2_set):
 				continue
-			dis = predicate[1]-subject[1]
-			if dis < min_dis and dis > 0:
+			dis = predicate[1]-subject[2]
+			if dis < min_dis and dis >= 0:
 				min_dis = dis
 				t_subject = subject
 		predicate2subject[predicate] = t_subject
@@ -1152,8 +1152,8 @@ def post_decoder(words, predicted_fact_tags, ID2Tag=None):
 		for _object in f3_set:
 			if is_blocked(predicate[1], _object[1], f2_set):
 				continue
-			dis = _object[1]-predicate[1]
-			if dis < min_dis and dis > 0:
+			dis = _object[1]-predicate[2]
+			if dis < min_dis and dis >= 0:
 				min_dis = dis
 				t_object = _object
 		predicate2object[predicate] = t_object
@@ -1161,11 +1161,11 @@ def post_decoder(words, predicted_fact_tags, ID2Tag=None):
 
 	subject2object = dict()
 	for subject in f1_set:
-		min_dis = 10
+		min_dis = MIN
 		t_object = None
 		for _object in f3_set:
-			dis = _object[1]-subject[1]
-			if dis < min_dis and dis > 0:
+			dis = _object[1]-subject[2]
+			if dis < min_dis and dis >= 0:
 				min_dis = dis
 				t_object = _object
 		subject2object[subject] = t_object
@@ -1173,11 +1173,11 @@ def post_decoder(words, predicted_fact_tags, ID2Tag=None):
 
 	object2subject = dict()
 	for _object in f3_set:
-		min_dis = 10
+		min_dis = MIN
 		t_subject = None
 		for subject in f1_set:
-			dis = _object[1]-subject[1]
-			if dis < min_dis and dis > 0:
+			dis = _object[1]-subject[2]
+			if dis < min_dis and dis >= 0:
 				min_dis = dis
 				t_subject = subject
 		object2subject[_object] = t_subject
@@ -1185,11 +1185,11 @@ def post_decoder(words, predicted_fact_tags, ID2Tag=None):
 
 	attrib2subject = dict()
 	for attrib in f1a_set:
-		min_dis = 5
+		min_dis = 3
 		t_subject = None
 		for subject in f1_set:
-			dis = math.fabs(attrib[1]-subject[1])
-			if dis < min_dis:
+			dis = subject[1] - attrib[2]
+			if dis < min_dis and dis >= 0:
 				min_dis = dis
 				t_subject = subject
 		attrib2subject[attrib] = t_subject
@@ -1200,8 +1200,8 @@ def post_decoder(words, predicted_fact_tags, ID2Tag=None):
 		min_dis = 5
 		t_predicate = None
 		for predicate in f2_set:
-			dis = predicate[1] - attrib[1]
-			if dis < min_dis and dis > 0:
+			dis = predicate[1] - attrib[2]
+			if dis < min_dis and dis >= 0:
 				min_dis = dis
 				t_predicate = predicate
 		attrib12predicate[attrib] = t_predicate
@@ -1211,8 +1211,8 @@ def post_decoder(words, predicted_fact_tags, ID2Tag=None):
 		min_dis = 5
 		t_predicate = None
 		for predicate in f2_set:
-			dis = attrib[1] - predicate[1]
-			if dis < min_dis and dis > 0:
+			dis = attrib[1] - predicate[2]
+			if dis < min_dis and dis >= 0:
 				min_dis = dis
 				t_predicate = predicate
 		attrib32predicate[attrib] = t_predicate
@@ -1222,8 +1222,8 @@ def post_decoder(words, predicted_fact_tags, ID2Tag=None):
 		min_dis = 3
 		t_object = None
 		for _object in f3_set:
-			dis = math.fabs(attrib[1]-_object[1])
-			if dis < min_dis:
+			dis = _object[1] - attrib[2]
+			if dis < min_dis and dis >= 0:
 				min_dis = dis
 				t_object = _object
 		attrib2object[attrib] = t_object
@@ -1287,6 +1287,8 @@ def post_decoder(words, predicted_fact_tags, ID2Tag=None):
 					fact[1] = attrib
 			continue
 		for fact in facts:
+			if fact[2][0] == 'in':
+				continue
 			t_subject = fact[0]
 			if t_subject != subject:
 				continue
@@ -1299,13 +1301,15 @@ def post_decoder(words, predicted_fact_tags, ID2Tag=None):
 			for _fact in facts:
 				if _fact == fact:
 					continue
-				if _fact[2:] == fact[2:]:
+				if _fact[2:] == fact[2:] and _fact[0] != 'NIL':
+					if _fact[0][1] - subject[2] < 0 or _fact[0][1] - subject[2] > 3:
+						continue
 					if _fact[1] == 'NIL':
 						_fact[1] = attrib
-					elif _fact[1] != attrib:
-						new_fact = copy.deepcopy(_fact)
-						new_fact[1] = attrib
-						extend_facts.append(new_fact)
+					# elif _fact[1] != attrib:
+					# 	new_fact = copy.deepcopy(_fact)
+					# 	new_fact[1] = attrib
+					# 	extend_facts.append(new_fact)
 	facts.extend(extend_facts)
 
 	extend_facts = []
@@ -1333,13 +1337,15 @@ def post_decoder(words, predicted_fact_tags, ID2Tag=None):
 			for _fact in facts:
 				if _fact == fact:
 					continue
-				if _fact[:2] == fact[:2]:
+				if _fact[:2] == fact[:2] and _fact[3] != 'NIL':
+					if _fact[3][1] - _object[2] < 0 or _fact[3][1] - _object[2] > 3:
+						continue
 					if _fact[4] == 'NIL':
 						_fact[4] = attrib
-					elif _fact[4] != attrib:
-						new_fact = copy.deepcopy(_fact)
-						new_fact[4] = attrib
-						extend_facts.append(new_fact)
+					# elif _fact[4] != attrib:
+					# 	new_fact = copy.deepcopy(_fact)
+					# 	new_fact[4] = attrib
+					# 	extend_facts.append(new_fact)
 	facts.extend(extend_facts)
 
 	return facts

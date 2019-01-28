@@ -1,0 +1,401 @@
+===== 26112261 stmt1 =====
+WORD	Dexamethasone	enhances	programmed	cell	death	1	expression	during	t	cell	activation	,	an	insight	into	the	optimum	application	of	glucocorticoids	in	anti-cancer	therapy	.
+POSTAG	NN	NNS	VBD	NN	NN	CD	NN	IN	NN	NN	NN	,	DT	NN	IN	DT	JJ	NN	IN	NNS	IN	JJ	NN	.
+CAP	B-P	I-P	B-C	I-C	I-C	O	B-C	O	B-C	I-C	I-C	O	O	B-C	O	O	B-A	I-A	O	B-C	O	B-C	I-C	O
+===== 26112261 stmt2 =====
+WORD	Programmed	cell	death	1	is	a	key	cell-surface	receptor	of	CD28	superfamily	that	triggers	inhibitory	pathways	to	attenuate	T-cell	responses	and	promote	T-cell	tolerance	.
+POSTAG	NNP	NN	NN	CD	VBZ	DT	JJ	JJ	NN	IN	NNP	RB	IN	NNS	JJ	NNS	TO	VB	NNP	NNS	CC	VB	NNP	NN	.
+CAP	B-C	I-C	I-C	O	O	O	B-A	I-A	I-A	O	B-C	O	O	B-P	I-P	I-P	O	O	B-C	I-C	O	O	B-P	I-P	O
+===== 26112261 stmt3 =====
+WORD	As	a	crucial	role	in	tumor	immunity	,	PD-1	has	been	a	focus	of	studies	in	anti-cancer	therapy	.
+POSTAG	IN	DT	JJ	NN	IN	NN	NN	,	NNP	VBZ	VBN	DT	NN	IN	NNS	IN	JJ	NN	.
+CAP	O	O	B-P	I-P	O	B-C	I-C	O	B-C	O	O	O	B-A	O	B-C	O	B-C	I-C	O
+===== 26112261 stmt4 =====
+WORD	It	has	been	approved	that	tumors	could	exploit	PD-1-dependent	immune	suppression	for	immune	evasion	.
+POSTAG	PRP	VBZ	VBN	VBN	IN	NNS	MD	VB	NNP	JJ	NN	IN	JJ	NN	.
+CAP	O	O	O	O	O	B-C	O	O	B-P	I-P	I-P	O	B-C	I-C	O
+===== 26112261 stmt5 =====
+WORD	Considering	the	wide	use	of	glucocorticoids	in	anti-cancer	therapy	and	their	immunosuppressive	effects	,	we	explored	whether	GCs	could	influence	the	expression	ofPD-1	.
+POSTAG	VBG	DT	JJ	NN	IN	NNS	IN	JJ	NN	CC	PRP$	JJ	NNS	,	PRP	VBD	IN	NNP	MD	VB	DT	NN	NN	.
+CAP	O	O	B-A	I-A	O	B-C	O	B-C	I-C	O	O	B-P	I-P	O	O	O	O	B-C	O	O	O	B-P	I-P	O
+===== 26112261 stmt6 =====
+WORD	In	our	study	,	we	used	dexamethasone	as	a	model	glucocorticoid	and	demonstrated	that	DEX	could	enhance	PD-1	expression	in	a	dose-dependent	manner	.
+POSTAG	IN	PRP$	NN	,	PRP	VBD	NN	IN	DT	NN	NN	CC	VBD	IN	NNP	MD	VB	NNP	NN	IN	DT	JJ	NN	.
+CAP	O	O	B-A	O	O	O	B-C	O	O	B-P	I-P	O	O	O	B-C	O	O	B-C	I-C	O	O	B-P	I-P	O
+===== 26112261 stmt7 =====
+WORD	The	effects	were	completely	inhibited	by	the	glucocorticoid	receptor	antagonist	mifepristone	,	indicating	that	the	effect	of	DEX	on	PD-1	is	mediated	through	GR	.
+POSTAG	DT	NNS	VBD	RB	VBN	IN	DT	NN	NN	VBP	NN	,	VBG	IN	DT	NN	IN	NNP	IN	NNP	VBZ	VBN	IN	NNP	.
+CAP	O	B-C	O	O	O	O	O	B-C	I-C	O	B-P	O	O	O	O	B-A	O	B-C	O	B-C	O	O	O	B-C	O
+===== 26112261 stmt8 =====
+WORD	We	further	found	the	sensitivity	to	DEX-induced	upregulation	of	PD-1	expression	had	a	significant	difference	between	different	T	cell	subsets	,	with	memory	T	cells	more	susceptible	to	this	effect	.
+POSTAG	PRP	VBP	VBD	DT	NN	TO	NNP	NN	IN	NNP	NN	VBD	DT	JJ	NN	IN	JJ	NNP	NN	NNS	,	IN	NN	NNP	NNS	RBR	JJ	TO	DT	NN	.
+CAP	O	O	O	O	B-C	O	B-A	I-A	O	B-C	I-C	O	O	B-P	I-P	O	B-P	I-P	I-P	I-P	O	O	B-C	I-C	I-C	O	O	O	O	B-C	O
+===== 26112261 stmt9 =====
+WORD	We	also	showed	that	DEX	could	suppress	T	cell	functions	via	inhibition	of	cytokines	production	such	as	IL-2	,	IFN-gamma	,	TNF-alpha	and	induction	of	apoptosis	of	Tcells	.
+POSTAG	PRP	RB	VBD	IN	NNP	MD	VB	NNP	NN	NNS	IN	NN	IN	NNS	NN	JJ	IN	NNP	,	NNP	,	NNP	CC	NN	IN	NN	IN	NNP	.
+CAP	O	O	O	O	B-C	O	O	B-P	I-P	I-P	O	B-A	O	B-C	I-C	O	O	B-C	O	B-C	O	B-C	O	B-A	O	B-A	O	B-C	O
+===== 26112261 stmt10 =====
+WORD	Our	findings	suggest	a	novel	way	by	which	DEX	suppress	the	function	of	activated	T	lymphocytes	by	enhancing	expression	of	PD-1	and	provide	an	insight	into	the	optimum	clinical	application	of	GCs	.
+POSTAG	PRP$	NNS	VBP	DT	JJ	NN	IN	WDT	NNP	VBD	DT	NN	IN	JJ	NNP	NNS	IN	VBG	NN	IN	NNP	CC	VB	DT	NN	IN	DT	JJ	JJ	NN	IN	NNP	.
+CAP	O	B-C	O	O	B-P	I-P	O	O	B-C	O	O	B-A	O	O	B-C	I-C	O	O	B-A	O	B-C	O	O	O	B-C	O	O	B-A	I-A	I-A	O	B-C	O
+===== 26109431 stmt1 =====
+WORD	The	mUTYH	base	excision	repair	gene	protects	against	inflammation-associated	colorectal	carcinogenesis	.
+POSTAG	DT	NN	NN	NN	NN	NN	NNS	IN	JJ	JJ	NN	.
+CAP	O	B-P	I-P	I-P	I-P	I-P	I-P	O	B-P	I-P	I-P	O
+===== 26109431 stmt2 =====
+WORD	MUTYH	DNA	glycosylase	removes	mismatched	adenine	opposite	7	,	8-dihydro-8-oxoguanine	,	which	is	the	major	mutagenic	lesion	induced	by	oxidative	stress	.
+POSTAG	NNP	NNP	NN	VBZ	VBN	JJ	JJ	CD	,	JJ	,	WDT	VBZ	DT	JJ	JJ	NN	VBN	IN	JJ	NN	.
+CAP	B-P	I-P	I-P	O	O	O	O	O	O	O	O	O	O	O	B-P	I-P	I-P	O	O	B-C	I-C	O
+===== 26109431 stmt3 =====
+WORD	Biallelic	mutations	in	MUTYH	are	associated	with	MUTYH-Associated	polyposis	and	increased	risk	in	colorectal	cancer	.
+POSTAG	JJ	NNS	IN	NNP	VBP	VBN	IN	JJ	NN	CC	VBN	NN	IN	JJ	NN	.
+CAP	B-P	I-P	O	B-P	O	O	O	B-C	I-C	O	O	B-P	O	B-C	I-C	O
+===== 26109431 stmt4 =====
+WORD	We	investigated	cancer	susceptibility	associated	with	MUTYH	inactivation	in	a	mouse	model	of	inflammation-dependent	carcinogenesis	induced	by	azoxymethane	and	dextran	sulphate	.
+POSTAG	PRP	VBD	NN	NN	VBN	IN	NNP	NN	IN	DT	NN	NN	IN	JJ	NN	VBN	IN	NN	CC	JJ	NN	.
+CAP	O	O	B-P	I-P	O	O	B-P	I-P	O	O	B-A	I-A	O	B-C	I-C	O	O	B-P	O	B-P	I-P	O
+===== 26109431 stmt5 =====
+WORD	Mutyh-/-	mice	were	more	sensitive	than	wild-type	animals	to	AOM/DSS	toxicity	and	accumulated	DNA	8-oxoG	in	their	gastrointestinal	tract	.
+POSTAG	JJ	NN	VBD	RBR	JJ	IN	JJ	NNS	TO	NNP	NN	CC	JJ	NNP	NN	IN	PRP$	JJ	NN	.
+CAP	B-P	I-P	O	O	O	O	B-P	I-P	O	B-P	I-P	O	B-P	I-P	I-P	O	O	B-C	I-C	O
+===== 26109431 stmt6 =====
+WORD	AOM/DSS-induced	colonic	adenomas	were	significantly	more	numerous	in	Mutyh-/-	than	in	WT	animals	,	and	frequently	showed	a	tubulo-villous	feature	along	with	high-grade	dysplasia	and	larger	size	lesions	.
+POSTAG	NNP	JJ	NN	VBD	RB	RBR	JJ	IN	NNP	IN	IN	NNP	NNS	,	CC	RB	VBD	DT	JJ	NN	IN	IN	JJ	NN	CC	JJR	NN	NNS	.
+CAP	B-P	I-P	I-P	O	O	O	O	O	B-P	O	O	B-P	I-P	O	O	O	O	O	B-P	I-P	O	O	B-P	I-P	O	O	B-P	I-P	O
+===== 26109431 stmt7 =====
+WORD	This	condition	resulted	in	a	greater	propensity	to	develop	adenocarcinomas	.
+POSTAG	DT	NN	VBD	IN	DT	JJR	NN	TO	VB	NN	.
+CAP	O	B-C	O	O	O	O	B-P	O	O	B-P	O
+===== 26109431 stmt8 =====
+WORD	The	colon	of	untreated	Mutyh-/-	mice	expressed	higher	basal	levels	of	pro-inflammatory	cytokines	GM-CSF	and	IFNgamma	,	and	treatment	with	AOM/DSS	induced	an	early	decrease	in	circulating	CD4+	and	CD8+	T	lymphocytes	and	an	increase	in	myeloid-derived	suppressor	cells	.
+POSTAG	DT	NN	IN	JJ	NNP	NN	VBD	JJR	NN	NNS	IN	JJ	NNS	NNP	CC	NNP	,	CC	NN	IN	NNP	VBD	DT	JJ	NN	IN	VBG	NNP	CC	NNP	NNP	VBZ	CC	DT	NN	IN	JJ	NN	NNS	.
+CAP	O	B-A	O	B-C	I-C	I-C	O	O	B-A	I-A	O	B-C	I-C	I-C	O	B-C	O	O	B-C	O	B-P	O	O	B-P	I-P	O	O	B-C	O	B-C	I-C	O	O	O	B-A	O	B-C	I-C	I-C	O
+===== 26109431 stmt9 =====
+WORD	Adenomas	from	Mutyh-/-	mice	had	a	greater	infiltrate	of	Foxp3+	T	regulatory	cells	,	granulocytes	,	macrophages	,	MDSCs	and	strong	expression	of	TGF-beta-latency-associated	peptide	and	IL6	.
+POSTAG	RB	IN	NNP	NN	VBD	DT	JJR	NN	IN	NNP	NNP	JJ	NNS	,	NNS	,	NNS	,	NNP	CC	JJ	NN	IN	NNP	NN	CC	NNP	.
+CAP	O	O	B-P	I-P	O	O	O	B-A	O	B-C	I-C	I-C	I-C	O	B-C	O	B-C	O	B-C	O	B-A	I-A	O	B-C	I-C	O	B-C	O
+===== 26109431 stmt10 =====
+WORD	Our	findings	indicate	that	MUTYH	loss	is	associated	with	an	increase	in	CRC	risk	,	which	involves	immunosuppression	and	altered	inflammatory	response	.
+POSTAG	PRP$	NNS	VBP	IN	NNP	NN	VBZ	VBN	IN	DT	NN	IN	NNP	NN	,	WDT	VBZ	NN	CC	VBD	JJ	NN	.
+CAP	O	B-C	O	O	B-P	I-P	O	O	O	O	B-C	O	B-P	I-P	O	O	O	B-C	O	O	B-C	I-C	O
+===== 26109431 stmt11 =====
+WORD	We	propose	that	the	AOM/DSS	initiation/promotion	protocol	in	Mutyh-/-	mice	provides	a	good	model	for	MAP	.
+POSTAG	PRP	VBP	IN	DT	NNP	NN	NN	IN	NNP	NNP	VBZ	DT	JJ	NN	IN	NNP	.
+CAP	O	O	O	O	B-P	I-P	I-P	O	B-P	I-P	O	O	B-P	I-P	O	B-P	O
+===== 26108865 stmt1 =====
+WORD	Protective	immune	response	against	newly	emerging	goose	tembusu	virus	infection	induced	by	immunization	with	a	recombinant	envelope	protein	.
+POSTAG	JJ	JJ	NN	IN	RB	VBG	JJ	NNS	JJ	NN	VBN	IN	NN	IN	DT	JJ	NN	NN	.
+CAP	B-P	I-P	I-P	O	O	O	B-C	I-C	I-C	B-C	O	O	B-C	O	O	B-P	I-P	I-P	O
+===== 26108865 stmt2 =====
+WORD	Flavivirus	envelope	protein	locates	at	the	outermost	surface	of	viral	particle	and	mediates	virus	entry	and	fusion	infection	,	and	plays	an	important	role	in	eliciting	neutralizing	antibody	.
+POSTAG	NNP	NN	NN	VBZ	IN	DT	JJ	NN	IN	JJ	NN	CC	NNS	JJ	NN	CC	NN	NN	,	CC	VBZ	DT	JJ	NN	IN	VBG	VBG	NN	.
+CAP	B-P	I-P	I-P	O	O	O	B-A	I-A	O	B-C	I-C	O	B-P	B-C	I-C	O	B-P	I-P	O	O	O	O	B-P	I-P	O	O	O	B-C	O
+===== 26108865 stmt3 =====
+WORD	In	this	study	,	goose	tembusu	virus	E	protein	was	expressed	and	purified	from	Escherichia	coli	.
+POSTAG	IN	DT	NN	,	JJ	NN	NN	NNP	NN	VBD	VBN	CC	VBN	IN	NNP	NN	.
+CAP	O	O	B-A	O	B-C	I-C	I-C	B-P	I-P	O	O	O	O	O	B-C	I-C	O
+===== 26108865 stmt4 =====
+WORD	Then	the	immuological	changes	and	protection	efficiency	of	this	protein	serving	as	recombinant	subunit	vaccine	were	tested	.
+POSTAG	RB	DT	JJ	NNS	CC	NN	NN	IN	DT	NN	VBG	IN	JJ	NN	NN	VBD	VBN	.
+CAP	O	O	B-P	I-P	O	B-P	I-P	O	O	B-C	O	O	B-P	I-P	I-P	O	O	O
+===== 26108865 stmt5 =====
+WORD	In	ducks	,	recombinant	E	protein	markedly	elicited	specific	neutralizing	antibody	,	stimulated	the	secretion	of	IL-2	,	TNF-alpha	and	IFN-gamma	cytokines	,	and	promoted	the	proliferation	of	lymphocytes	.
+POSTAG	IN	NNS	,	JJ	NNP	NN	RB	VBD	JJ	VBG	NN	,	VBD	DT	NN	IN	NNP	,	NNP	CC	NNP	NNS	,	CC	VBD	DT	NN	IN	NNS	.
+CAP	O	B-P	O	B-P	I-P	I-P	O	O	O	O	B-C	O	O	O	B-A	O	B-C	O	B-A	O	B-P	I-P	O	O	O	O	B-A	O	B-C	O
+===== 26108865 stmt6 =====
+WORD	Additionally	,	population	of	soluble	CD4	and	soluble	CD8	molecules	in	sera	significantly	increased	in	response	to	this	antigen	.
+POSTAG	RB	,	NN	IN	JJ	NNP	CC	JJ	NNP	NNS	IN	NN	RB	VBD	IN	NN	TO	DT	NN	.
+CAP	O	O	B-A	O	B-C	I-C	O	B-P	I-P	I-P	O	B-C	O	O	O	B-C	O	O	B-C	O
+===== 26108865 stmt7 =====
+WORD	Moreover	,	virus	challenge	revealed	that	recombinant	E	protein	contributed	to	protection	against	GTV	challenge	.
+POSTAG	RB	,	NN	NN	VBD	IN	JJ	NNP	NN	VBD	TO	NN	IN	NNP	NN	.
+CAP	O	O	B-P	I-P	O	O	B-P	I-P	I-P	O	O	B-C	O	B-P	I-P	O
+===== 26108865 stmt8 =====
+WORD	Taken	together	,	the	data	indicate	that	recombinant	GTV	E	protein	could	induce	significant	humoral	and	cell	mediated	responses	and	that	recombinant	E	protein	can	serve	as	a	potential	subunit	vaccine	candidate	against	GTV	.
+POSTAG	VBN	RB	,	DT	NNS	VBP	IN	JJ	NNP	NNP	NN	MD	VB	JJ	JJ	CC	NN	VBN	NNS	CC	DT	JJ	NNP	NN	MD	VB	IN	DT	JJ	NN	NN	NN	IN	NNP	.
+CAP	O	O	O	O	B-C	O	O	B-P	I-P	I-P	I-P	O	O	O	O	O	B-C	O	B-C	O	O	B-P	I-P	I-P	O	O	O	O	B-P	I-P	I-P	I-P	O	B-P	O
+===== 26108865 stmt9 =====
+WORD	This	article	is	protected	by	copyright	.
+POSTAG	DT	NN	VBZ	VBN	IN	NN	.
+CAP	O	B-P	O	O	O	B-P	O
+===== 26108865 stmt10 =====
+WORD	All	rights	reserved	.
+POSTAG	DT	NNS	VBN	.
+CAP	O	B-P	O	O
+===== 26106583 stmt1 =====
+WORD	4-1BB	agonists	,	multi-Potent	potentiators	of	tumor	immunity	.
+POSTAG	JJ	NNS	,	JJ	NNS	IN	NN	NN	.
+CAP	O	O	O	B-A	I-A	O	B-C	I-C	O
+===== 26106583 stmt2 =====
+WORD	Immunotherapy	is	a	rapidly	expanding	field	of	oncology	aimed	at	targeting	,	not	the	tumor	itself	,	but	the	immune	system	combating	the	cancerous	lesion	.
+POSTAG	NNP	VBZ	DT	RB	VBG	NN	IN	NN	VBN	IN	VBG	,	RB	DT	NN	PRP	,	CC	DT	JJ	NN	VBG	DT	JJ	NN	.
+CAP	B-P	O	O	O	O	B-A	O	B-C	O	O	O	O	O	O	B-C	O	O	O	O	B-C	I-C	O	O	B-P	I-P	O
+===== 26106583 stmt3 =====
+WORD	Of	the	many	approaches	currently	under	study	to	boost	anti-tumor	immune	responses	,	modulation	of	immune	co-receptors	on	lymphocytes	in	the	tumor	microenvironment	has	thus	far	proven	to	be	the	most	effective	.
+POSTAG	IN	DT	JJ	NNS	RB	IN	NN	TO	VB	JJ	JJ	NNS	,	NN	IN	JJ	NNS	IN	NNS	IN	DT	NN	NN	VBZ	RB	RB	JJ	TO	VB	DT	RBS	JJ	.
+CAP	O	O	B-P	I-P	O	O	B-A	O	O	B-P	I-P	I-P	O	B-A	O	B-C	I-C	O	B-C	O	O	B-C	I-C	O	O	O	O	O	O	O	O	O	O
+===== 26106583 stmt4 =====
+WORD	Antibody	blockade	of	the	T	cell	co-inhibitory	receptor	cytotoxic	T	lymphocyte	antigen-4	has	become	the	first	FDA	approved	immune	checkpoint	blockade	,	however	,	tumor	infiltrating	lymphocytes	express	a	diverse	array	of	additional	stimulatory	and	inhibitory	co-receptors	,	which	can	be	targeted	to	boost	tumor	immunity	.
+POSTAG	NNP	NN	IN	DT	NNP	NN	JJ	NN	NN	NNP	VBZ	NN	VBZ	VBN	DT	JJ	NNP	VBD	JJ	NN	NN	,	RB	,	NN	VBG	NNS	VBP	DT	JJ	NN	IN	JJ	NN	CC	JJ	NNS	,	WDT	MD	VB	VBN	TO	VB	NN	NN	.
+CAP	B-P	I-P	O	O	B-P	I-P	I-P	I-P	B-C	I-C	I-C	I-C	O	O	O	B-P	I-P	O	B-P	I-P	I-P	O	O	O	B-C	I-C	I-C	O	O	B-A	I-A	O	B-C	I-C	O	B-P	I-P	O	O	O	O	O	O	O	B-C	I-C	O
+===== 26106583 stmt5 =====
+WORD	Among	these	,	the	co-stimulatory	receptor	4-1BB	possesses	an	unequaled	capacity	for	both	activation	and	pro-inflammatory	polarization	of	anti-tumor	lymphocytes	.
+POSTAG	IN	DT	,	DT	JJ	NN	JJ	VBZ	DT	JJ	NN	IN	DT	NN	CC	JJ	NN	IN	JJ	NNS	.
+CAP	O	O	O	O	B-P	I-P	O	O	O	B-P	I-P	O	O	B-C	O	B-A	I-A	O	B-C	I-C	O
+===== 26106583 stmt6 =====
+WORD	While	functional	studies	of	4-1BB	have	focused	on	its	prominent	role	in	augmenting	cytotoxic	CD8	T	cells	,	4-1BB	can	also	modulate	the	activity	of	CD4	T	cells	,	B	cells	,	natural	killer	cells	,	monocytes	,	macrophages	,	and	dendritic	cells	.
+POSTAG	IN	JJ	NNS	IN	JJ	VBP	VBN	IN	PRP$	JJ	NN	IN	VBG	NN	NNP	NNP	NNS	,	JJ	MD	RB	VB	DT	NN	IN	NNP	NNP	NNS	,	NNP	NNS	,	JJ	NN	NNS	,	NNS	,	NNS	,	CC	JJ	NNS	.
+CAP	O	B-P	I-P	O	O	O	O	O	O	B-P	I-P	O	O	B-P	I-P	I-P	I-P	O	O	O	O	O	O	B-A	O	B-C	I-C	I-C	O	B-C	I-C	O	B-C	I-C	I-C	O	B-C	O	B-C	O	O	B-C	I-C	O
+===== 26106583 stmt7 =====
+WORD	4-1BB	's	expression	on	both	T	cells	and	antigen	presenting	cells	,	coupled	with	its	capacity	to	promote	survival	,	expansion	,	and	enhanced	effector	function	of	activated	T	cells	,	has	made	it	an	alluring	target	for	tumor	immunotherapy	.
+POSTAG	NN	POS	NN	IN	DT	NNP	NNS	CC	NN	NN	NNS	,	VBN	IN	PRP$	NN	TO	VB	NN	,	NN	,	CC	VBD	NN	NN	IN	JJ	NNP	NNS	,	VBZ	VBN	PRP	DT	VBG	NN	IN	NN	NN	.
+CAP	O	O	B-C	O	O	B-C	I-C	O	B-C	I-C	I-C	O	O	O	O	B-A	O	O	B-A	O	B-A	O	O	O	B-A	I-A	O	B-C	I-C	I-C	O	O	O	O	O	O	B-P	O	B-P	I-P	O
+===== 26106583 stmt8 =====
+WORD	In	contrast	to	immune	checkpoint	blocking	antibodies	,	4-1BB	agonists	can	both	potentiate	anti-tumor	and	anti-viral	immunity	,	while	at	the	same	time	ameliorating	autoimmune	disease	.
+POSTAG	IN	NN	TO	VB	NN	VBG	NNS	,	JJ	NNS	MD	DT	VB	NN	CC	JJ	NN	,	IN	IN	DT	JJ	NN	VBG	JJ	NN	.
+CAP	O	B-C	O	O	B-P	O	B-C	O	O	O	O	O	O	B-C	O	B-P	I-P	O	O	O	O	B-P	I-P	O	B-C	I-C	O
+===== 26106583 stmt9 =====
+WORD	Despite	this	,	4-1BB	agonists	can	trigger	high	grade	liver	inflammation	which	has	slowed	their	clinical	development	.
+POSTAG	IN	DT	,	JJ	NNS	MD	VB	JJ	NN	NN	NN	WDT	VBZ	VBN	PRP$	JJ	NN	.
+CAP	O	O	O	O	O	O	O	B-P	I-P	I-P	I-P	O	O	O	O	B-P	I-P	O
+===== 26106583 stmt10 =====
+WORD	In	this	review	,	we	discuss	how	the	underlying	immunobiology	of	4-1BB	activation	suggests	the	potential	for	therapeutically	synergistic	combination	strategies	in	which	immune	adverse	events	can	be	minimized	.
+POSTAG	IN	DT	NN	,	PRP	VBP	WRB	DT	JJ	NN	IN	JJ	NN	VBZ	DT	NN	IN	RB	JJ	NN	NNS	IN	WDT	JJ	JJ	NNS	MD	VB	VBN	.
+CAP	O	O	B-P	O	O	O	O	O	B-P	I-P	O	O	O	O	O	B-P	O	O	B-P	I-P	I-P	O	O	B-P	I-P	I-P	O	O	O	O
+===== 26101139 stmt1 =====
+WORD	Candida	albicans	up-regulates	the	Fas-L	expression	in	liver	natural	killer	and	natural	killer	t	cells	.
+POSTAG	NNP	VBZ	JJ	DT	NNP	NN	IN	JJ	JJ	NN	CC	JJ	NN	NN	NNS	.
+CAP	B-P	O	O	O	B-C	I-C	O	O	B-C	I-C	O	B-C	I-C	I-C	I-C	O
+===== 26101139 stmt2 =====
+WORD	After	Candida	albicans	arrival	to	the	liver	,	the	local	production	of	proinflammatory	cytokines	and	the	expanded	intrahepatic	lymphocytes	can	be	either	beneficial	or	detrimental	to	the	host	.
+POSTAG	IN	NNP	VBZ	JJ	TO	DT	NN	,	DT	JJ	NN	IN	JJ	NNS	CC	DT	VBN	JJ	NNS	MD	VB	CC	JJ	CC	JJ	TO	DT	NN	.
+CAP	O	B-P	O	O	O	O	B-C	O	O	B-A	I-A	O	B-C	I-C	O	O	O	B-C	I-C	O	O	O	O	O	O	O	O	B-C	O
+===== 26101139 stmt3 =====
+WORD	Herein	we	explored	the	balance	between	protective	inflammatory	reaction	and	liver	damage	,	focusing	our	study	on	the	contribution	of	TNF-alpha	and	Fas-Fas-L	pathways	in	the	hepatocellular	apoptosis	associated	to	C.	albicans	infection	.
+POSTAG	NNP	PRP	VBD	DT	NN	IN	JJ	JJ	NN	CC	JJ	NN	,	VBG	PRP$	NN	IN	DT	NN	IN	NNP	CC	NNP	NNS	IN	DT	JJ	NN	VBN	TO	NNP	NNS	NN	.
+CAP	B-P	O	O	O	B-C	O	B-P	I-P	I-P	O	B-C	I-C	O	O	O	B-A	O	O	B-A	O	B-C	O	B-P	I-P	O	O	B-P	I-P	O	O	B-C	I-C	I-C	O
+===== 26101139 stmt4 =====
+WORD	A	robust	tissue	reaction	and	a	progressive	increase	of	IL-1beta	,	IL-6	and	TNF-alpha	were	observed	in	infected	animals	.
+POSTAG	DT	JJ	NN	NN	CC	DT	JJ	NN	IN	NNP	,	NNP	CC	NNP	VBD	VBN	IN	JJ	NNS	.
+CAP	O	B-P	I-P	I-P	O	O	B-A	I-A	O	B-C	O	B-C	O	B-C	O	O	O	B-P	I-P	O
+===== 26101139 stmt5 =====
+WORD	Blocking	the	biological	activity	of	TNF-alpha	did	not	modify	the	number	of	apoptotic	cells	observed	in	C.	albicans	infected	animals	.
+POSTAG	VBG	DT	JJ	NN	IN	NNP	VBD	RB	VB	DT	NN	IN	JJ	NNS	VBN	IN	NNP	NNS	JJ	NNS	.
+CAP	O	O	B-A	I-A	O	B-C	O	O	O	O	B-A	O	B-C	I-C	O	O	B-P	I-P	I-P	I-P	O
+===== 26101139 stmt6 =====
+WORD	Fas-L	molecule	was	up	regulated	on	purified	hepatic	mononuclear	cells	and	its	expression	progressed	with	the	infection	.
+POSTAG	JJ	NN	VBD	RB	VBN	IN	JJ	JJ	NN	NNS	CC	PRP$	NN	VBN	IN	DT	NN	.
+CAP	B-P	I-P	O	O	O	O	O	O	B-C	I-C	O	O	B-C	O	O	O	B-C	O
+===== 26101139 stmt7 =====
+WORD	In	the	IHL	compartment	,	the	absolute	number	of	Fas-L+	NK	and	NKT	cells	increased	on	days	1	and	3	of	the	infection	.
+POSTAG	IN	DT	NNP	NN	,	DT	JJ	NN	IN	NNP	NNP	CC	NNP	NNS	VBD	IN	NNS	CD	CC	CD	IN	DT	NN	.
+CAP	O	O	B-P	I-P	O	O	B-A	I-A	O	B-C	I-C	O	B-C	I-C	O	O	B-A	O	O	O	O	O	B-C	O
+===== 26101139 stmt8 =====
+WORD	C.	albicans	was	also	able	to	up	regulate	Fas-L	expression	in	normal	liver	NK	and	NKT	cells	after	in	vitro	contact	.
+POSTAG	NNP	NNS	VBD	RB	JJ	TO	RP	VB	NNP	NN	IN	JJ	NN	NNP	CC	NNP	NNS	IN	IN	JJ	NN	.
+CAP	B-C	I-C	O	O	O	O	O	O	B-C	I-C	O	B-P	I-P	I-P	O	B-C	I-C	O	O	B-P	I-P	O
+===== 26101139 stmt9 =====
+WORD	The	innate	receptor	TLR2	was	involved	in	this	phenomenon	.
+POSTAG	DT	NN	NN	NNP	VBD	VBN	IN	DT	NN	.
+CAP	O	B-P	I-P	I-P	O	O	O	O	B-P	O
+===== 26101139 stmt10 =====
+WORD	In	the	interplay	between	host	factors	and	evasion	strategies	exploited	by	pathogens	,	the	mechanism	supported	here	could	represent	an	additional	way	that	allows	this	fungus	to	circumvent	protective	immune	responses	in	the	liver	.
+POSTAG	IN	DT	NN	IN	NN	NNS	CC	NN	NNS	VBN	IN	NNS	,	DT	NN	VBD	RB	MD	VB	DT	JJ	NN	WDT	VBZ	DT	NN	TO	VB	JJ	JJ	NNS	IN	DT	NN	.
+CAP	O	O	B-C	O	B-C	I-C	O	B-P	I-P	O	O	B-C	O	O	B-P	O	O	O	O	O	B-P	I-P	O	O	O	B-P	O	O	B-C	I-C	I-C	O	O	B-C	O
+===== 26099946 stmt1 =====
+WORD	Biotherapies	targeting	t	and	b	cells	,	from	immune	suppression	to	immune	tolerance	.
+POSTAG	NNS	VBG	NN	CC	NN	NNS	,	IN	JJ	NN	TO	JJ	NN	.
+CAP	B-P	O	O	O	B-C	I-C	O	O	B-C	I-C	O	B-C	I-C	O
+===== 26099946 stmt2 =====
+WORD	The	field	of	immunotherapy	has	undergone	a	major	rejuvenation	with	the	development	of	monoclonal	antibodies	and	fusion	proteins	targeting	specialized	receptors	of	T	and	B	lymphocytes	or	cytokines	relevant	for	the	differentiation	of	these	cells	.
+POSTAG	DT	NN	IN	NN	VBZ	RB	DT	JJ	NN	IN	DT	NN	IN	JJ	NNS	CC	NN	NNS	VBG	JJ	NNS	IN	NNP	CC	NNP	NNS	CC	NNS	VBP	IN	DT	NN	IN	DT	NNS	.
+CAP	O	B-A	O	B-C	O	O	O	B-P	I-P	O	O	B-A	O	B-C	I-C	O	B-C	I-C	O	B-P	I-P	O	O	O	B-C	I-C	O	B-A	O	O	O	B-C	O	O	B-C	O
+===== 26099946 stmt3 =====
+WORD	This	review	will	focus	on	autoimmunity	,	probably	the	field	that	benefited	most	from	these	new	biological	therapies	that	very	significantly	impacted	the	modalities	of	patient	's	care	.
+POSTAG	DT	NN	MD	VB	IN	NN	,	RB	DT	NN	WDT	VBD	RBS	IN	DT	JJ	JJ	NNS	WDT	RB	RB	VBN	DT	NNS	IN	NN	POS	NN	.
+CAP	O	B-P	O	O	O	B-C	O	O	O	B-A	O	O	O	O	O	B-P	I-P	I-P	O	O	O	O	O	B-A	O	B-A	O	B-C	O
+===== 26099946 stmt4 =====
+WORD	The	aim	is	to	present	the	agents	which	constitute	major	disease	modifying	drugs	for	the	treatment	of	chronic	invalidating	autoimmune	diseases	.
+POSTAG	DT	NN	VBZ	TO	VB	DT	NNS	WDT	VBP	JJ	NN	VBG	NNS	IN	DT	NN	IN	JJ	VBG	NN	NNS	.
+CAP	O	B-P	O	O	O	O	B-C	O	O	B-P	I-P	O	B-C	O	O	B-A	O	O	O	B-C	I-C	O
+===== 26099946 stmt5 =====
+WORD	In	doing	so	,	we	shall	distinguish	between	agents	that	globally	depress	immune	responses	and	those	that	may	selectively	target	the	harmful	autoimmune	response	over	long-term	while	preserving	the	capacity	of	the	host	to	react	normally	to	exogenous	antigens	,	in	other	words	,	agents	promoting	'operational	tolerance'	.
+POSTAG	IN	VBG	RB	,	PRP	MD	VB	IN	NNS	WDT	RB	VBP	JJ	NNS	CC	DT	WDT	MD	RB	VB	DT	JJ	JJ	NN	IN	JJ	IN	VBG	DT	NN	IN	DT	NN	TO	VB	RB	TO	JJ	NNS	,	IN	JJ	NNS	,	NNS	VBG	JJ	NN	.
+CAP	O	O	O	O	O	O	O	O	B-C	O	O	O	B-A	I-A	O	O	O	O	O	O	O	B-P	I-P	I-P	O	O	O	O	O	B-P	O	O	B-C	O	O	O	O	B-C	I-C	O	O	B-P	I-P	O	B-C	O	O	O	O
+===== 26090478 stmt1 =====
+WORD	Endothelin	receptors	expressed	by	immune	cells	are	involved	in	modulation	of	inflammation	and	in	fibrosis	,	relevance	to	the	pathogenesis	of	systemic	sclerosis	.
+POSTAG	NNP	NNS	VBN	IN	NN	NNS	VBP	VBN	IN	NN	IN	NN	CC	IN	NN	,	NN	TO	DT	NN	IN	JJ	NN	.
+CAP	B-P	I-P	O	O	B-C	I-C	O	O	O	B-A	O	B-C	O	O	B-C	O	B-C	O	O	B-A	O	B-C	I-C	O
+===== 26090478 stmt2 =====
+WORD	Endothelin-1	plays	a	pivotal	role	in	vasoconstriction	,	fibrosis	,	and	inflammation	,	the	key	features	of	systemic	sclerosis	.
+POSTAG	NNP	VBZ	DT	JJ	NN	IN	NN	,	NN	,	CC	NN	,	DT	JJ	NNS	IN	JJ	NN	.
+CAP	B-P	O	O	B-P	I-P	O	B-P	O	B-C	O	O	B-C	O	O	B-A	I-A	O	B-C	I-C	O
+===== 26090478 stmt3 =====
+WORD	ET-1	receptors
+POSTAG	NNP	NNS
+CAP	B-C	I-C
+===== 26090478 stmt4 =====
+WORD	Endothelin	receptors	antagonists	such	as	bosentan	have	beneficial	effects	on	vasoconstriction	and	fibrosis	,	but	less	is	known	about	their	potential	anti-inflammatory	effects	.
+POSTAG	NNP	NNS	NNS	JJ	IN	NNS	VBP	JJ	NNS	IN	NN	CC	NN	,	CC	JJR	VBZ	VBN	IN	PRP$	JJ	JJ	NNS	.
+CAP	B-P	I-P	I-P	O	O	B-P	O	B-C	I-C	O	B-P	O	B-C	O	O	O	O	O	O	O	B-P	I-P	I-P	O
+===== 26090478 stmt5 =====
+WORD	We	studied	the	expression	of	ET-1	receptors	on	immune	cells	and	the	link	between	ET-1	and	inflammation	in	patients	with	SSc	.
+POSTAG	PRP	VBD	DT	NN	IN	NNP	NNS	IN	JJ	NNS	CC	DT	NN	IN	NNP	CC	NN	IN	NNS	IN	NNP	.
+CAP	O	O	O	B-A	O	B-C	I-C	O	B-C	I-C	O	O	B-P	O	B-P	O	B-C	O	B-C	O	B-C	O
+===== 26090478 stmt6 =====
+WORD	We	show	here	that	ET-1	exerts	a	proinflammatory	effect	in	CD4+	T	cells	,	since	it	induces	an	increased	IFN-gamma	production	,	preincubation	with	antagonists	of	both	receptors	reduces	IFN-gamma	production	.
+POSTAG	PRP	VBP	RB	IN	NNP	VBZ	DT	JJ	NN	IN	NNP	NNP	NNS	,	IN	PRP	VBZ	DT	JJ	JJ	NN	,	NN	IN	NNS	IN	DT	NNS	VBZ	JJ	NN	.
+CAP	O	O	O	O	B-P	O	O	B-P	I-P	O	B-C	I-C	I-C	O	O	O	O	O	B-P	I-P	I-P	O	B-C	O	B-C	O	O	B-C	O	B-P	I-P	O
+===== 26090478 stmt7 =====
+WORD	Moreover	,	following	ET-1	stimulation	,	neutrophils	produce	proinflammatory	mediators	,	thus	amplifying	the	effects	of	activated	CD4+	T	cells	.
+POSTAG	RB	,	VBG	JJ	NN	,	JJ	VBP	JJ	NNS	,	RB	VBG	DT	NNS	IN	JJ	NNP	NNP	NNS	.
+CAP	O	O	O	B-P	I-P	O	O	O	B-C	I-C	O	O	O	O	B-A	O	B-C	I-C	I-C	I-C	O
+===== 26090478 stmt8 =====
+WORD	Our	data	indicate	that	ET-1	system	is	involved	in	the	pathogenesis	of	inflammation	and	fibrosis	typical	of	SSc	,	through	the	activation	of	T	lymphocytes	and	neutrophils	and	the	consequent	release	of	proinflammatory	and	profibrotic	cytokines	.
+POSTAG	PRP$	NNS	VBP	IN	NNP	NN	VBZ	VBN	IN	DT	NN	IN	NN	CC	NN	JJ	IN	NNP	,	IN	DT	NN	IN	NNP	NNS	CC	NNS	CC	DT	JJ	NN	IN	NN	CC	JJ	NNS	.
+CAP	O	B-C	O	O	B-P	I-P	O	O	O	O	B-A	O	B-C	O	B-C	O	O	B-C	O	O	O	B-A	O	B-C	I-C	O	B-C	O	O	B-A	I-A	O	B-C	O	B-C	I-C	O
+===== 26090478 stmt9 =====
+WORD	These	findings	suggest	that	dual	ET-1	receptors	antagonist	therapy	,	besides	its	effect	on	vasculopathy	,	has	a	profound	impact	on	the	immune	system	favouring	antiinflammatory	and	antifibrogenic	effects	.
+POSTAG	DT	NNS	VBP	IN	JJ	JJ	NNS	VBP	NN	,	IN	PRP$	NN	IN	NN	,	VBZ	DT	JJ	NN	IN	DT	NN	NN	VBG	NN	CC	JJ	NNS	.
+CAP	O	B-C	O	O	B-P	I-P	I-P	O	B-C	O	O	O	B-C	O	B-C	O	O	O	B-P	I-P	O	O	B-C	I-C	O	B-P	O	B-P	I-P	O
+===== 26087330 stmt1 =====
+WORD	Gene	expression	markers	of	age-related	inflammation	in	two	human	cohorts	.
+POSTAG	NNP	NN	NNS	IN	JJ	NN	IN	CD	JJ	NNS	.
+CAP	B-A	I-A	I-A	O	B-C	I-C	O	O	B-P	I-P	O
+===== 26087330 stmt2 =====
+WORD	Chronically	elevated	circulating	inflammatory	markers	are	common	in	older	persons	but	mechanisms	are	unclear	.
+POSTAG	RB	VBN	VBG	JJ	NNS	VBP	JJ	IN	JJ	NNS	CC	NNS	VBP	JJ	.
+CAP	O	O	O	B-C	I-C	O	O	O	B-P	I-P	O	B-C	O	O	O
+===== 26087330 stmt3 =====
+WORD	Many	blood	transcripts	are	associated	with	interleukin-6	protein	levels	independent	of	age	.
+POSTAG	JJ	NN	NNS	VBP	VBN	IN	JJ	NN	NNS	JJ	IN	NN	.
+CAP	B-P	I-P	I-P	O	O	O	B-P	I-P	I-P	O	O	B-C	O
+===== 26087330 stmt4 =====
+WORD	We	aimed	to	identify	gene	transcripts	statistically	mediating	,	as	drivers	or	responders	,	the	increasing	levels	of	IL6	protein	in	blood	at	olderages	.
+POSTAG	PRP	VBD	TO	VB	NN	NNS	RB	VBG	,	IN	NNS	CC	NNS	,	DT	VBG	NNS	IN	NNP	NN	IN	NN	IN	NNS	.
+CAP	O	O	O	O	B-C	I-C	O	O	O	O	B-P	O	B-C	O	O	O	B-A	O	B-C	I-C	O	B-C	O	B-P	O
+===== 26087330 stmt5 =====
+WORD	blood	derived	in-vivo	RNA	from	the	Framingham	Heart	Study	and	InCHIANTI	study	,	with	Affymetrix	and	Illumina	expression	arrays	respectively	,	were	tested	for	statistical	mediation	of	the	age-IL6	association	using	resampling	techniques	,	adjusted	for	confounders	and	multipletesting	.
+POSTAG	NN	VBD	JJ	NNP	IN	DT	NNP	NNP	NNP	CC	NNP	NN	,	IN	NNP	CC	NNP	NN	NNS	RB	,	VBD	VBN	IN	JJ	NN	IN	DT	JJ	NN	VBG	VBG	NNS	,	VBN	IN	NNS	CC	NN	.
+CAP	B-C	O	B-P	I-P	O	O	B-P	I-P	I-P	O	B-P	I-P	O	O	B-P	O	B-P	I-P	I-P	O	O	O	O	O	B-P	I-P	O	O	B-P	I-P	O	O	B-C	O	O	O	B-P	O	B-P	O
+===== 26087330 stmt6 =====
+WORD	In	FHS	,	IL6	expression	was	not	associated	with	IL6	protein	levels	in	blood	.
+POSTAG	IN	NNP	,	NNP	NN	VBD	RB	VBN	IN	NNP	NN	NNS	IN	NN	.
+CAP	O	B-P	O	B-P	I-P	O	O	O	O	B-P	I-P	I-P	O	B-C	O
+===== 26087330 stmt7 =====
+WORD	102	genes	statistically	mediated	the	age-IL6	association	of	which	25	replicated	in	InCHIANTI	.
+POSTAG	CD	NNS	RB	VBD	DT	JJ	NN	IN	WDT	CD	VBD	IN	NNP	.
+CAP	O	B-C	O	O	O	B-P	I-P	O	O	O	O	O	B-P	O
+===== 26087330 stmt8 =====
+WORD	The	largest	effect	gene	mediated	19%	and	replicated	by	PCR	in	InCHIANTI	.
+POSTAG	DT	JJS	NN	NN	VBD	CD	CC	VBN	IN	NNP	IN	NNP	.
+CAP	O	O	B-P	I-P	O	O	O	O	O	B-C	O	B-P	O
+===== 26087330 stmt9 =====
+WORD	Other	replicated	mediators	included	PRF1	and	IL1B	,	few	other	cytokines	were	significantmediators	.
+POSTAG	JJ	VBD	NNS	VBD	NNP	CC	NNP	,	JJ	JJ	NNS	VBD	NNS	.
+CAP	O	O	B-C	O	B-P	O	B-P	O	B-P	I-P	I-P	O	B-P	O
+===== 26087330 stmt10 =====
+WORD	This	transcriptome-wide	study	on	human	blood	identified	a	small	distinct	set	of	genes	that	statistically	mediate	the	age-IL6	association	.
+POSTAG	DT	JJ	NN	IN	JJ	NN	VBD	DT	JJ	JJ	NN	IN	NNS	WDT	RB	VBP	DT	JJ	NN	.
+CAP	O	B-P	I-P	O	B-C	I-C	O	O	B-A	I-A	I-A	O	B-C	O	O	O	O	B-P	I-P	O
+===== 26087330 stmt11 =====
+WORD	Findings	are	robust	across	two	cohorts	and	different	expression	technologies	.
+POSTAG	NNS	VBP	JJ	IN	CD	NNS	CC	JJ	NN	NNS	.
+CAP	B-P	O	O	O	O	B-C	O	B-P	I-P	I-P	O
+===== 26087330 stmt12 =====
+WORD	Raised	IL6	levels	may	not	derive	from	circulating	white	cells	in	age	related	inflammation	.
+POSTAG	VBN	NNP	NNS	MD	RB	VB	IN	VBG	JJ	NNS	IN	NN	VBN	NN	.
+CAP	O	B-P	I-P	O	O	O	O	O	B-C	I-C	O	B-C	O	B-C	O
+===== 26086678 stmt1 =====
+WORD	Possible	role	of	staphylococcal	enterotoxin	b	in	the	pathogenesis	of	autoimmune	diseases	.
+POSTAG	JJ	NN	IN	JJ	NN	NN	IN	DT	NN	IN	NN	NNS	.
+CAP	B-A	I-A	O	B-C	I-C	I-C	O	O	B-A	O	B-C	I-C	O
+===== 26086678 stmt2 =====
+WORD	As	a	member	of	superantigens	produced	by	Staphylococcus	aureus	,	staphylococcal	enterotoxin	B	is	a	exotoxin	superantigen	that	can	regulate	the	activity	of	immunomodulatory	and	pro-inflammatory	cell	types	.
+POSTAG	IN	DT	NN	IN	NNS	VBN	IN	NNP	NN	,	JJ	NN	NNP	VBZ	DT	NN	NN	WDT	MD	VB	DT	NN	IN	NN	CC	NN	NN	NNS	.
+CAP	O	O	B-A	O	B-C	O	O	B-C	I-C	O	B-C	I-C	I-C	O	O	B-P	I-P	O	O	O	O	B-A	O	B-C	O	B-P	I-P	I-P	O
+===== 26086678 stmt3 =====
+WORD	In	addition	,	SEB	plays	a	critical	role	in	the	pathogenesis	of	autoimmune	disorders	either	by	initiating	the	autoimmune	process	or	by	inducing	a	relapse	in	an	individual	in	clinical	remission	from	an	autoimmune	disorder	.
+POSTAG	IN	NN	,	NNP	VBZ	DT	JJ	NN	IN	DT	NN	IN	NN	NNS	CC	IN	VBG	DT	JJ	NN	CC	IN	VBG	DT	NN	IN	DT	NN	IN	JJ	NN	IN	DT	JJ	NN	.
+CAP	O	B-C	O	B-C	O	O	B-P	I-P	O	O	B-A	O	B-C	I-C	O	O	O	O	B-C	I-C	O	O	O	O	B-C	O	O	B-C	O	B-P	I-P	O	O	B-P	I-P	O
+===== 26086678 stmt4 =====
+WORD	SEB	can	directly	activate	T	lymphocytes	,	leading	to	the	release	of	cytokines	,	superoxides	,	or	other	mediators	of	inflammation	either	directly	or	indirectly	,	because	of	its	unique	ability	to	cross-link	human	major	histocompatibility	complex	class	II	and	T	cell	receptors	,	forming	a	trimolecular	complex	.
+POSTAG	NNP	MD	RB	VB	NNP	NNS	,	VBG	TO	DT	NN	IN	NNS	,	NNS	,	CC	JJ	NNS	IN	NN	CC	RB	CC	RB	,	IN	IN	PRP$	JJ	NN	TO	VB	JJ	JJ	NN	NN	NN	NNP	CC	NNP	NN	NNS	,	VBG	DT	JJ	NN	.
+CAP	B-C	O	O	O	B-C	I-C	O	O	O	O	B-A	O	B-C	O	B-P	O	O	B-A	I-A	O	B-C	O	O	O	O	O	O	O	O	B-P	I-P	O	O	O	B-C	I-C	I-C	I-C	I-C	O	B-C	I-C	I-C	O	O	O	B-P	I-P	O
+===== 26086678 stmt5 =====
+WORD	This	review	discusses	the	potential	effects	of	SEB	in	the	pathogenesis	of	autoimmune	diseases	such	as	multiple	sclerosis	,	systemic	lupus	erythematosus	,	and	rheumatoid	arthritis	,	and	explores	some	updated	therapeutic	medications	to	neutralize	SEB	.
+POSTAG	DT	NN	VBZ	DT	JJ	NNS	IN	NNP	IN	DT	NN	IN	JJ	NNS	JJ	IN	JJ	NN	,	JJ	NN	NN	,	CC	JJ	NN	,	CC	VBZ	DT	JJ	JJ	NNS	TO	VB	NNP	.
+CAP	O	B-P	O	O	B-A	I-A	O	B-C	O	O	B-A	O	B-C	I-C	O	O	B-C	I-C	O	B-C	I-C	I-C	O	O	B-C	I-C	O	O	O	O	B-P	I-P	I-P	O	O	B-C	O
+===== 26083432 stmt1 =====
+WORD	First	demonstration	of	antigen	induced	cytokine	expression	by	cD4-1+	lymphocytes	in	a	poikilotherm	,	studies	in	zebrafish	.
+POSTAG	NNP	NN	IN	NN	VBN	JJ	NN	IN	JJ	NNS	IN	DT	NN	,	NNS	IN	NN	.
+CAP	B-A	I-A	O	B-C	O	B-C	I-C	O	B-P	I-P	O	O	B-P	O	B-C	O	B-C	O
+===== 26083432 stmt2 =====
+WORD	Adaptive	immunity	in	homeotherms	depends	greatly	on	CD4+	Th	cells	which	release	cytokines	in	response	to	specific	antigen	stimulation	.
+POSTAG	JJ	NN	IN	NNS	VBZ	RB	IN	NNP	NNP	NNS	WDT	VBP	NNS	IN	NN	TO	JJ	NN	NN	.
+CAP	B-P	I-P	O	B-P	O	O	O	B-C	I-C	I-C	O	O	B-C	O	B-A	O	B-P	I-P	I-P	O
+===== 26083432 stmt3 =====
+WORD	Whilst	bony	fish	and	poikilothermic	tetrapods	possess	cells	that	express	TcR	and	CD4-related	genes	,	to	date	there	is	no	unequivocal	demonstration	that	cells	equivalent	to	Th	exist	.
+POSTAG	NNP	NN	NN	CC	JJ	NNS	NN	NNS	WDT	VBP	NNP	CC	NNP	NNS	,	TO	NN	EX	VBZ	DT	JJ	NN	WDT	NNS	JJ	TO	NNP	NN	.
+CAP	B-P	I-P	I-P	O	B-P	I-P	I-P	I-P	O	O	B-C	O	B-P	I-P	O	O	B-P	O	O	O	B-P	I-P	O	B-C	O	O	B-P	I-P	O
+===== 26083432 stmt4 =====
+WORD	Thus	,	in	this	study	we	determined	whether	CD4-1+	lymphocytes	can	express	cytokines	typical	of	Th	cells	following	antigen	specific	stimulation	,	using	the	zebrafish	.
+POSTAG	RB	,	IN	DT	NN	PRP	VBD	IN	NNP	NNS	MD	VB	NNS	JJ	IN	NNP	NNS	VBG	NN	JJ	NN	,	VBG	DT	NN	.
+CAP	O	O	O	O	B-A	O	O	O	B-P	I-P	O	O	B-C	O	O	B-C	I-C	O	B-P	I-P	I-P	O	O	O	B-C	O
+===== 26083432 stmt5 =====
+WORD	Initially	,	we	analyzed	the	CD4	locus	in	zebrafish	and	found	three	CD4	homologues	,	a	CD4-1	molecule	and	two	CD4-2	molecules	.
+POSTAG	RB	,	PRP	VBD	DT	NNP	NN	IN	NN	CC	VBD	CD	NNP	NNS	,	DT	JJ	NN	CC	CD	JJ	NNS	.
+CAP	O	O	O	O	O	B-P	I-P	O	B-C	O	O	O	B-P	I-P	O	O	B-P	I-P	O	O	B-P	I-P	O
+===== 26083432 stmt6 =====
+WORD	The	zfCD4-1	and	zfCD4-2	transcripts	were	detected	in	immune	organs	and	were	most	highly	expressed	in	lymphocytes	.
+POSTAG	DT	NN	CC	JJ	NNS	VBD	VBN	IN	JJ	NNS	CC	VBD	RBS	RB	VBN	IN	NNS	.
+CAP	O	B-P	O	B-P	I-P	O	O	O	B-C	I-C	O	O	O	O	O	O	B-C	O
+===== 26083432 stmt7 =====
+WORD	A	polyclonal	antibody	to	zfCD4-1	was	developed	and	used	with	an	antibody	to	ZAP70	and	revealed	double	positive	cells	by	immunohistochemistry	,	and	in	the	Mycobacterium	marinum	disease	model	CD4-1+	cells	were	apparent	surrounding	the	granulomas	typical	of	the	infection	.
+POSTAG	DT	JJ	NN	TO	NN	VBD	VBN	CC	VBN	IN	DT	NN	TO	NNP	CC	VBD	RB	JJ	NNS	IN	NN	,	CC	IN	DT	NNP	NN	NN	NN	NNP	NNS	VBD	JJ	VBG	DT	JJ	NN	IN	DT	NN	.
+CAP	O	B-P	I-P	O	B-P	O	O	O	O	O	O	B-C	O	B-P	O	O	O	B-C	I-C	O	B-C	O	O	O	O	B-P	I-P	I-P	I-P	I-P	I-P	O	O	O	O	B-P	I-P	O	O	B-C	O
+===== 26083432 stmt8 =====
+WORD	Next	a	prime-boost	experiment	,	using	human	gamma	globulin	as	antigen	,	was	performed	and	revealed	for	the	first	time	in	fish	that	zfCD4-1+	lymphocytes	increase	the	expression	of	cytokines	and	master	transcription	factors	relevant	to	Th1/Th2-type	responses	as	a	consequence	of	boosting	with	specific	antigen	.
+POSTAG	IN	DT	JJ	NN	,	VBG	JJ	NN	NN	IN	NN	,	VBD	VBN	CC	VBN	IN	DT	JJ	NN	IN	JJ	IN	JJ	NNS	VBP	DT	NN	IN	NNS	CC	NN	NN	NNS	VBP	TO	JJ	NNS	IN	DT	NN	IN	VBG	IN	JJ	NN	.
+CAP	O	O	B-P	I-P	O	O	B-P	I-P	I-P	O	B-C	O	O	O	O	O	O	O	B-P	I-P	O	O	O	B-P	I-P	O	O	B-A	O	B-C	O	B-P	I-P	I-P	O	O	B-P	I-P	O	O	B-P	O	O	O	B-C	I-C	O
+===== 26081155 stmt1 =====
+WORD	The	severity	of	cecal	ligature	and	puncture-Induced	sepsis	correlates	with	the	degree	of	encephalopathy	,	but	the	sepsis	does	not	lead	to	acute	activation	of	spleen	lymphocytes	in	mice	.
+POSTAG	DT	NN	IN	JJ	NN	CC	JJ	NN	NNS	IN	DT	NN	IN	NN	,	CC	DT	NN	VBZ	RB	VB	TO	JJ	NN	IN	JJ	NNS	IN	NN	.
+CAP	O	B-A	O	B-C	I-C	O	B-P	I-P	I-P	O	O	B-A	O	B-C	O	O	O	B-C	O	O	O	O	B-A	I-A	O	B-A	I-A	O	B-C	O
+===== 26081155 stmt2 =====
+WORD	Septic	encephalopathy	represents	the	most	frequently	observed	form	of	encephalopathy	in	intensive	care	units	.
+POSTAG	JJ	NN	VBZ	DT	RBS	RB	JJ	NN	IN	NN	IN	JJ	NN	NNS	.
+CAP	B-P	I-P	O	O	O	O	B-A	I-A	O	B-C	O	B-P	I-P	I-P	O
+===== 26081155 stmt3 =====
+WORD	Interactions	between	the	immune	and	nervous	systems	have	been	observed	in	experimental	sepsis	.
+POSTAG	NNS	IN	DT	NN	CC	JJ	NNS	VBP	VBN	VBN	IN	JJ	NN	.
+CAP	B-P	O	O	B-C	O	B-P	I-P	O	O	O	O	B-P	I-P	O
+===== 26081155 stmt4 =====
+WORD	Therefore	,	the	aim	of	the	current	study	was	to	characterize	the	effect	of	different	severities	of	sepsis	on	encephalopathy	and	the	inflammatory	profile	of	the	spleen	.
+POSTAG	RB	,	DT	NN	IN	DT	JJ	NN	VBD	TO	VB	DT	NN	IN	JJ	NNS	IN	NN	IN	NN	CC	DT	JJ	NN	IN	DT	NN	.
+CAP	O	O	O	B-P	O	O	B-P	I-P	O	O	O	O	B-A	O	B-A	I-A	O	B-A	O	B-C	O	O	B-P	I-P	O	O	B-C	O
+===== 26081155 stmt5 =====
+WORD	We	hypothesized	that	different	grades	of	sepsis	severity	would	lead	to	variations	in	encephalopathy	and	activation	of	spleen	cells	.
+POSTAG	PRP	VBD	IN	JJ	NNS	IN	NN	NN	MD	VB	TO	NNS	IN	JJ	CC	NN	IN	JJ	NNS	.
+CAP	O	O	O	B-A	I-A	O	B-C	I-C	O	O	O	B-C	O	O	O	B-A	O	B-C	I-C	O
+===== 26081155 stmt6 =====
+WORD	We	induced	sepsis	of	different	severities	in	Balb/c	mice	by	cecal	ligature	and	puncture	.
+POSTAG	PRP	VBD	NN	IN	JJ	NNS	IN	NNP	NN	IN	JJ	NN	CC	NN	.
+CAP	O	O	B-A	O	B-A	I-A	O	B-C	I-C	O	B-C	I-C	I-C	I-C	O
+===== 26081155 stmt7 =====
+WORD	Six	and	12	h	after	CLP	induction	,	behavioral	impairment	was	assessed	by	the	SmithKline/Harwell/Imperial	College/Royal	Hospital/Phenotype	Assessment	test	.
+POSTAG	NNP	CC	CD	NN	IN	NNP	NN	,	JJ	NN	VBD	VBN	IN	DT	NNP	NNP	NNP	NNP	NN	.
+CAP	B-P	O	O	O	O	B-P	I-P	O	B-P	I-P	O	O	O	O	B-P	I-P	I-P	I-P	I-P	O
+===== 26081155 stmt8 =====
+WORD	The	animals	were	then	killed	,	and	the	plasma	,	spleen	,	and	hippocampus	were	removed	.
+POSTAG	DT	NNS	VBD	RB	VBN	,	CC	DT	NN	,	NN	,	CC	NN	VBD	VBN	.
+CAP	O	B-C	O	O	O	O	O	O	B-C	O	B-C	O	O	B-P	O	O	O
+===== 26081155 stmt9 =====
+WORD	Levels	of	the	encephalopathy	marker	S100beta	were	measured	in	plasma	.
+POSTAG	NNS	IN	DT	JJ	NN	NNP	VBD	VBN	IN	NN	.
+CAP	B-P	O	O	B-P	I-P	I-P	O	O	O	B-C	O
+===== 26081155 stmt10 =====
+WORD	Spleens	were	weighed	and	then	a	characterization	of	splenic	lymphocytes	was	performed	by	flow	cytometry	.
+POSTAG	NNS	VBD	VBN	CC	RB	DT	NN	IN	JJ	NNS	VBD	VBN	IN	JJ	NN	.
+CAP	B-P	O	O	O	O	O	B-A	O	B-C	I-C	O	O	O	B-C	I-C	O
+#100

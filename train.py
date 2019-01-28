@@ -34,7 +34,7 @@ parser.add_argument('--language_model', type=str, default='./models/LM/model.pt'
 					help='language model checkpoint to use')
 parser.add_argument('--bert_model', type=str, default='./models/LM/',
 					help='language model checkpoint to use')
-parser.add_argument('--wordembed', type=str, default='./models/WE/',
+parser.add_argument('--wordembed', type=str, default='./models/WE/pubmed-vectors=50.bin',
 					help='wordembedding file for words')
 parser.add_argument('--out_model', type=str, default='./models/supervised_model',
 					help='location of the saved model')

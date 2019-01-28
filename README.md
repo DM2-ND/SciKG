@@ -9,26 +9,38 @@ The versions of python in training and predicting shoud be the same!!! (the pre-
 
 ## Quick Start: RUN Extractor
 
+`mkdir predictions`
 
+`python MIMO_Extractor.py --cuda --udata ./self_train/udata/stmts-demo-unlabeled-small.tsv --out_file ./predictions/stmts-demo-small-prediction --language_model ./models/LM/model.pt --wordembed ./models/WE/pubmed-vectors=50.bin`
 
 ## TRAIN MODEL
 
-mkdir models
-mkdie results
+`mkdir models`
+`mkdie results`
 
 ### Supervised MIMO (single featrue with multi-input gates):
  
+an example:
+
 `python train.py --cuda --config 000111000 --language_model ./models/LM/model.pt --wordembed ./models/WE/pubmed-vectors=50.bin`
 
 ### Supervised MIMO (multi-input gates, multi-input ensembles):
+
+an example:
 
 `python train_ensemble.py --cuda --config 111 --language_model ./models/LM/model.pt --wordembed ./models/WE/pubmed-vectors=50.bin`
 
 ### Semi-supervised MIMO (single featrue with multi-input gates)
 
-`python main_self_training.py --cuda --language_model ./models/LM/model.pt --wordembed ./models/WE/pubmed-vectors=50.bin --check_point ../models/supervised_model_011000000.torch --AR --TC --SH --DEL`
+an example:
+
+`python self_train.py --cuda --language_model ./models/LM/model.pt --wordembed ./models/WE/pubmed-vectors=50.bin --check_point ../models/supervised_model_011000000.torch --AR --TC --SH --DEL`
 
 ### Semi-supervised MIMO (multi-input gates, multi-input ensembles):
+
+an example:
+
+`python self_train_ensemble.py --cuda --language_model ./models/LM/model.pt --wordembed ./models/WE/pubmed-vectors=50.bin --check_point ../models/ensemble_supervised_model_111.torch --AR --TC --SH --DEL`
 
 ## DOWNLOAD
 

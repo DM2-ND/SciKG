@@ -38,7 +38,7 @@ parser.add_argument('--check_point', type=str, default=WORKDIR+'models/ensemble_
 					help='location of the saved model')
 parser.add_argument('--language_model', type=str, default=WORKDIR+'models/LM/model.pt',
 					help='language model checkpoint to use')
-parser.add_argument('--wordembed', type=str, default=WORKDIR+'models/WE/',
+parser.add_argument('--wordembed', type=str, default=WORKDIR+'models/WE/pubmed-vectors=50.bin',
 					help='wordembedding file for words')
 parser.add_argument('--use_gate', action='store_true')
 parser.add_argument('--enhance', action='store_true')

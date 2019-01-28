@@ -25,14 +25,13 @@ from Stmt_Extraction_Net import *
 
 parser = argparse.ArgumentParser(description='Conditional Statement Extraction')
 
-parser.add_argument('--udata', type=str, default='./udata/stmts-demo-unlabeled-pubmed',
-					help='location of the unlabeled data')
+parser.add_argument('--udata', type=str, default='./self_train/udata/stmts-demo-unlabeled-small.tsv')
 parser.add_argument('--check_point', type=str, default=WORKDIR+'models/best_model/SeT_AR_TC_SH_DEL_ensemble_supervised_model_111.torch',
 					help='location of the best saved ensemble model')
-parser.add_argument('--out_file', type=str, default='./predicts/tupels.txt')
-parser.add_argument('--language_model', type=str, default=WORKDIR+'/code-preprocessing/word_language_model/model.pt',
+parser.add_argument('--out_file', type=str, default='./predictions/stmts-demo-small-prediction')
+parser.add_argument('--language_model', type=str, default='./models/LM/model.pt',
 					help='language model checkpoint to use')
-parser.add_argument('--wordembed', type=str, default=WORKDIR+'/preprocessing/pubmed-vectors=50.bin',
+parser.add_argument('--wordembed', type=str, default='./models/WE/pubmed-vectors=50.bin',
 					help='wordembedding file for words')
 parser.add_argument('--seed', type=int, default=824,
 					help='random seed')
@@ -84,6 +83,8 @@ def auto_labeling(models, ensemble_model, dataCenter, data_file):
 
 	batch_size = 50
 	batches = len(SENTENCEs)//batch_size
+	if len(SENTENCEs) % batch_size != 0:
+		batches += 1
 
 	nodes = []
 	links = []
@@ -93,11 +94,12 @@ def auto_labeling(models, ensemble_model, dataCenter, data_file):
 	node_id = 1
 	node2id = dict()
 
-	tag_outFile = open(data_file, 'w')
+	tag_outFile = open(data_file+'_tag_seqs.tsv', 'w')
+	tuple_outFile = open(data_file+'_tuples.txt', 'w')
 	count = 0
 	f_id = 1
 	c_id = 1
-	for index in range(batches+1):
+	for index in range(batches):
 		SENTENCEs_batch = SENTENCEs[index*batch_size:(index+1)*batch_size]
 		POSTAGs_batch = POSTAGs[index*batch_size:(index+1)*batch_size]
 		CAPs_batch = CAPs[index*batch_size:(index+1)*batch_size]
@@ -155,14 +157,77 @@ def auto_labeling(models, ensemble_model, dataCenter, data_file):
 			tag_outFile.write('CAP\t%s\n' % '\t'.join(CAPs_batch[i]))
 			tag_outFile.write('f\t%s\n' % '\t'.join(fact_tags))
 			tag_outFile.write('c\t%s\n' % '\t'.join(cond_tags))
-			count += 1
-			if count % 10000 == 0:
-				print(count,f_id-1,c_id-1, 'done')
+
+			tuple_outFile.write('===== '+stmt_str+' =====\n')
+			tuple_outFile.write('%s\n' % ' '.join(instance_list_batch[i].SENTENCE))
+
+			fact_tuples = post_decoder(instance_list_batch[i].SENTENCE, fact_tags)
+			condition_tuples = post_decoder(instance_list_batch[i].SENTENCE, cond_tags)
+			for fact_tuple in fact_tuples:
+				assert len(fact_tuple) == 5
+				_1C, _1A, predicate, _3C, _3A = fact_tuple
+				if predicate != 'NIL':
+					predicate = predicate[0]+'#'+str(predicate[1])
+
+				# subject nodes generation
+				if _1C != 'NIL':
+					_1C = _1C[0]+'#'+str(_1C[1])
+
+				if _1A == 'NIL':
+					subject = _1C
+				else:
+					_1A = _1A[0]+'#'+str(_1A[1])
+					subject = '{'+_1C+':'+_1A+'}'
+
+				# object nodes generation
+				if _3C != 'NIL':
+					_3C = _3C[0]+'#'+str(_3C[1])
+
+				if _3A == 'NIL':
+					_object = _3C
+				else:
+					_3A = _3A[0]+'#'+str(_3A[1])
+					_object = '{'+_3C+':'+_3A+'}'
+				tuple_outFile.write('f%d: (%s, %s, %s)\n' % (f_id,subject,predicate,_object))
+				f_id += 1
+
+			for condition_tuple in condition_tuples:
+				assert len(condition_tuple) == 5
+				_1C, _1A, predicate, _3C, _3A = condition_tuple
+				if predicate != 'NIL':
+					predicate = predicate[0]+'#'+str(predicate[1])
+
+				# subject nodes generation
+				if _1C != 'NIL':
+					_1C = _1C[0]+'#'+str(_1C[1])
+
+				if _1A == 'NIL':
+					subject = _1C
+				else:
+					_1A = _1A[0]+'#'+str(_1A[1])
+					subject = '{'+_1C+':'+_1A+'}'
+
+				# object nodes generation
+				if _3C != 'NIL':
+					_3C = _3C[0]+'#'+str(_3C[1])
+
+				if _3A == 'NIL':
+					_object = _3C
+				else:
+					_3A = _3A[0]+'#'+str(_3A[1])
+					_object = '{'+_3C+':'+_3A+'}'
+				
+				tuple_outFile.write('c%d: (%s, %s, %s)\n' % (c_id,subject,predicate,_object))
+				c_id += 1
+
+				count += 1
+				if count % 1000 == 0:
+					print(count,f_id-1,c_id-1, 'done')
 
 	tag_outFile.write('#'+str(count)+'\n')
 	tag_outFile.close()
-	# with open('./predicts/graph.json', 'w') as fw:
-	# 	json.dump(graph, fw)
+	tuple_outFile.write('#'+str(count)+'\n')
+	tuple_outFile.close()
 
 if __name__ == '__main__':
 	
@@ -203,9 +268,9 @@ if __name__ == '__main__':
 	ensemble_model.load_state_dict(torch.load(in_model_name))
 	print("loading done.")
 
-	dataCenter.loading_dataset(None, None, None, '../stmts-demo-eval.tsv')
+	# dataCenter.loading_dataset(None, None, None, './data/stmts-eval.tsv')
 
-	evaluation_ensemble(models, args.out_file, dataCenter, 0, 0, 0, 0, './models/no', 5, True, None, None, ensemble_model, device, False, False)
+	# evaluation_ensemble(models, args.out_file, dataCenter, 0, 0, 0, 0, './models/no', 5, True, None, None, ensemble_model, device, False, False)
 
 	udata_file = args.udata
 
