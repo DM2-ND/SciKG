@@ -1,4 +1,4 @@
-# MIMO
+# SciKG MIMO
 semi-supervised MIMO, a construction of Scientific Knowledge  Graph 
 
 ## ENV
